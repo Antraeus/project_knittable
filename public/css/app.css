@@ -1,0 +1,44 @@
+body {
+  font-size: 1em;
+  color: #000;
+  font-family: Arial, sans-serif;
+}
+h1 {
+  font-size: 230%;
+}
+h2 {
+  font-size: 200%;
+}
+h3 {
+  font-size: 150%;
+}
+h4 {
+  font-size: 110%;
+}
+a:link {
+  text-decoration: none;
+  color: #6B0DFF;
+}
+a:visited {
+  color: #FF5030;
+}
+a:hover {
+  text-decoration: underline;
+  color: #3E0894;
+}
+form {
+  border: 2px solid #393939;
+  border-radius: 10px;
+}
+button {
+  padding: 1em;
+  background-color: #0F7194;
+  color: #000;
+}
+button:hover {
+  color: #fff;
+}
+button:disabled {
+  background-color: #efefef;
+  color: #393939;
+}
