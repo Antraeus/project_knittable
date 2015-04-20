@@ -1,0 +1,27 @@
+{
+  "name": "project_knittable",
+  "version": "1.0.0",
+  "description": "User-specified sweaters",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Antraeus/project_knittable.git"
+  },
+  "keywords": [
+    "sweaters",
+    "knitting"
+  ],
+  "author": "Fish Hirt Tosi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Antraeus/project_knittable/issues"
+  },
+  "homepage": "https://github.com/Antraeus/project_knittable",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
+}
