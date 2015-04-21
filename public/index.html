@@ -13,7 +13,9 @@
 <!-- JAVASCRIPT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script src="deps/jquery.js"></script>
-<script src="js/to_localstorage.js"></script>
+<script src="js/Knitter.js"></script>
+<!-- <script src="js/app.js"></script> -->
+
 
 <!-- CONTENT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -33,8 +35,38 @@
     <section>
       <div>
       </div>
-      <form id="nameSave">
-        <label for="knitter-name">Enter your name: <input name="username" id="knitter-name" type="text" size="15" placeholder="Knitty McYarn"></label>
+      <form id="nameSave" class="pure-form pure-form-aligned">
+        <label for="knitter-name">Enter your name:
+          <input name="username" id="knitter-name" type="text" size="15" placeholder="Knitty McYarn">
+        </label>
+
+        <fieldset class="pure-control-group">
+        <legend>
+          Pick a Size:
+        </legend>
+        <label for="XS">X-Small
+          <input name="size" id="XS" type="radio">
+        </label>
+
+        <label for="S">Small
+          <input name="size" id="S" type="radio">
+        </label>
+
+        <label for="M">Medium
+          <input name="size" id="M" type="radio" checked>
+        </label>
+
+        <label for="L">Large
+          <input name="size" id="L" type="radio">
+        </label>
+
+        <label for="XL">X-Large
+          <input name="size" id="XL" type="radio">
+        </label>
+        <label for="XXL">2X
+          <input name="size" id="XXL" type="radio">
+        </label>
+        </fieldset>
         <button type="submit" id="submit">Submit Now</button>
       </form>
     </section>
