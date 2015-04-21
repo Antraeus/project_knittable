@@ -3,6 +3,10 @@ body {
   color: #000;
   font-family: Arial, sans-serif;
 }
+header, main, nav {
+  width: 95%;
+  margin: 0 auto;
+}
 h1 {
   font-size: 230%;
 }
@@ -29,6 +33,14 @@ a:hover {
 form {
   border: 2px solid #393939;
   border-radius: 10px;
+  width: 90%;
+  padding: .5em; 
+}
+fieldset p {
+  margin: .5em 0;
+}
+label.disabled {
+  color: #efefef;
 }
 button {
   padding: 1em;
@@ -41,4 +53,21 @@ button:hover {
 button:disabled {
   background-color: #efefef;
   color: #393939;
+}
+#design {
+  float: left;
+}
+#render {
+  float: left; 
+  position: relative;
+  width: 501px;
+  height: 420px;
+}
+#canvas1, #canvas2, #canvas3, #canvas4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#library {
+  clear: left;
 }
