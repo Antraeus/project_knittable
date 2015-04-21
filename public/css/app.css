@@ -1,15 +1,60 @@
+/* WHOLE PAGE
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->*/
 body {
+  width: 1200px;
   font-size: 1em;
   color: #000;
   font-family: Arial, sans-serif;
 }
-header, main, nav {
-  width: 95%;
-  margin: 0 auto;
+
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->*/
+header {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
+
+/*** title __________________________*/
+
 h1 {
-  font-size: 230%;
+  font-size: 300%;
+  font-weight: 500;
 }
+
+/*** navbar __________________________*/
+
+nav {
+  margin-top: 5px;
+  border:0px solid black;
+}
+
+.nav-buttons {
+  width: 25%;
+  background-color: white;
+  font-size: 125%;
+  padding: 1px;
+}
+
+.nav-buttons:hover {
+  background-color: blue;
+
+}
+#nav-design {
+  background-color: red;
+}
+#nav-home {
+  background-color:red;
+}
+#nav-pattern {
+  background-color:red;
+}
+#nav-about {
+  background-color: red;
+}
+
+
 h2 {
   font-size: 200%;
 }
@@ -19,46 +64,62 @@ h3 {
 h4 {
   font-size: 110%;
 }
-a:link {
+/*a:link {
   text-decoration: none;
+  border: 1px solid black;
   color: #6B0DFF;
 }
 a:visited {
-  color: #FF5030;
+  background-color: #FF5030;
 }
 a:hover {
   text-decoration: underline;
   color: #3E0894;
-}
+}*/
+
+/* Main
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->*/
+
+/*** forms __________________________*/
+
 form {
-  border: 2px solid #393939;
+  border: 1px solid #393939;
   border-radius: 10px;
-  width: 90%;
-  padding: .5em; 
+/*  width: 90%;*/
+  padding: 1.5em;
 }
-fieldset p {
-  margin: .5em 0;
-}
+
 label.disabled {
   color: #efefef;
 }
+
+/*** buttons __________________________*/
+
 button {
   padding: 1em;
-  background-color: #0F7194;
-  color: #000;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
 }
 button:hover {
-  color: #fff;
+  color: orange;
 }
 button:disabled {
-  background-color: #efefef;
+  background-color: white;
   color: #393939;
 }
+
 #design {
   float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.design-description{
+  margin-top: 5px;
 }
 #render {
-  float: left; 
+  float: left;
   position: relative;
   width: 501px;
   height: 420px;
