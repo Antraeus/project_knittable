@@ -1,0 +1,48 @@
+/* Main
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->*/
+#main1 {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top:40px;
+}
+
+.welcome {
+  font-size: 140%;
+  width: 60%;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.enter-name {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 100%;
+}
+
+fieldset p {
+  margin: 20px;
+}
+
+#submit {
+  margin-top: 20px;
+}
+
+.begin-design {
+  width: 60%;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.start-design {
+  margin-left: 35%;
+  margin-right: auto;
+  height: 100px;
+  width: 200px;
+}
+
+
