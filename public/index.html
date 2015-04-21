@@ -12,7 +12,8 @@
 
 <!-- JAVASCRIPT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
+<script src="deps/jquery.js"></script>
+<script src="js/to_localstorage.js"></script>
 
 <!-- CONTENT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -32,6 +33,10 @@
     <section>
       <div>
       </div>
+      <form id="nameSave">
+        <label for="knitter-name">Enter your name: <input name="username" id="knitter-name" type="text" size="15" placeholder="Knitty McYarn"></label>
+        <button type="submit" id="submit">Submit Now</button>
+      </form>
     </section>
     <section>
       <button>Design!</button>
