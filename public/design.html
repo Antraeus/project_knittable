@@ -12,7 +12,8 @@
 
 <!-- JAVASCRIPT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
+<script src="deps/jquery.js"></script>
+<script src="js/app.js"></script>
 
 <!-- CONTENT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -20,32 +21,53 @@
 </head>
 <body>
   <header>
-    <h1>Deisgn Your Sweater</h1>
+    <h1>Design Your Sweater</h1>
   </header>
 
-  <nav>Our nav goes here....</nav>
+  <nav><a href="index.html">Home</a> | <a href="design.html">Design</a> | <a href="pattern.html">Pattern</a></nav>
 
   <main>
-    <section>
-      <p>Our description goes here....</p>
-    </section>
-    <section>
-      <form>
-        <label for="project">Sweater Name <input type="text" name="project" placeholder="Enter Sweater Name"></label>
-        <label for="knit-up">Knit-Up<input type="radio" name="knit-up" id="up"checked></label>
-        <input type="radio" name="shoulder-style" value="yoke" checked>Shoulder-style</input>
-        <label for="shoulder-style">Shoulder-Style<input type="radio" name="shoulder-style" id="yoke"checked></label>
-        <label for="neck-style">Neck-Style<input type="radio" name="neck-style" id="crew"checked></label>
-        <label for="shaping">Shaping<input type="radio" name="shaping" id="none"checked></label>
-        <label for="length">Length<input type="radio" name="length" id="hip"checked></label>
-        <label for="knit-flat">Knit-Flat<input type="radio" name="knit-flat" id="flat"checked></label>
-        <label for="ease">Ease<input type="radio" name="two-inch" id="close1"checked> 2-inch<input type="radio" name="four-inch" id="close2"></label>
-        <label for="stitch-gauge">Stitch-Gauge<input type="text" name="stitch-Guage" placeholder="#" id="st-gauge"></label>
-        <label for="row-gauge">Row-Gauge<input type="text" name="row-gauge" placeholder="#" id="row-gauge"></label>
+<section id="design">
+      <p>Use the following choices to design your custom sweater.</p>
+      <form class="pure-form pure-form-aligned">
+        <fieldset class="pure-control-group">
+          <legend>Set Your Gauge</legend>
+          <label for="stitch-gauge">Stitch-Gauge (over 4 inches) <input type="text" name="stitch-gauge" placeholder="0.0" id="stitch-gauge" size="6"></label>
+          <label for="row-gauge">Row-Gauge (over 4 inches) <input type="text" name="row-gauge" placeholder="0.0" id="row-gauge" size="6"></label>
+        </fieldset>
+        <fieldset class="pure-control-group">
+          <legend>Design Your Sweater</legend>
+          <p>Remember, this design tool assumes you are working in the round.</p>
+          <label for="project-name">Sweater Name <input type="text" name="project-name" id="project-name" placeholder="Best Sweater Ever"></label>
+          <p>How will you knit your sweater?</p>
+          <label for="up"><input type="radio" name="direction" id="up" checked>Bottom-Up</label>
+          <label for="down" class="disabled"><input type="radio" name="direction" id="down">Top-down</label>
+          <p>What sleeve/shoulder style will you use?</p>
+          <label for="yoke"><input type="radio" name="shoulder-style" value="yoke" id="yoke" checked>Yoke</label>
+          <label for="set-in" class="disabled"><input type="radio" name="shoulder-style" value="set-in" id="set-in">Set-In</label>
+          <label for="raglan" class="disabled"><input type="radio" name="shoulder-style" value="raglan" id="raglan">Raglan</label>
+          <p>What neckline will you use?</p>
+          <label for="crew"><input type="radio" name="neck-style" id="crew" checked>Crew</label>
+          <label for="vee" class="disabled"><input type="radio" name="neck-style" id="vee">Vee</label>
+          <p>Will you have shaping in the torso of your sweater?</p>
+          <label for="yes-shape" class="disabled"><input type="radio" name="shaping" id="yes-shape">Shaped</label>
+          <label for="no-shape"><input type="radio" name="shaping" id="no-shape"checked>No shaping</label>
+          <p>How long will your sweater be?</p>
+          <label for="yes-hips" class="disabled"><input type="radio" name="length" id="yes-hips">Extra-long</label>
+          <label for="no-hips"><input type="radio" name="length" id="no-hips" checked>Standard length</label>
+          <p>How much ease do you want?</p>
+          <label for="close"><input type="radio" name="ease" id="close"checked>Close-fitting (2 in)</label>
+          <label for="loose"><input type="radio" name="ease" id="loose">Loose-fitting (4 in)</label>
+        </fieldset>
       </form>
     </section>
-    <canvas></canvas>
-    <section>
+    <section id="render">
+      <canvas id="canvas1" width="501" height="501">Sweater schematic</canvas>
+      <canvas id="canvas2" width="501" height="501">Sweater schematic</canvas>
+      <canvas id="canvas3" width="501" height="501">Sweater schematic</canvas>
+      <canvas id="canvas4" width="501" height="501">Sweater schematic</canvas>
+    </section>
+    <section id="library">
       <h4>Completed Designs</h4>
     </section>
 
