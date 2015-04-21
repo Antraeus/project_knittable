@@ -61,14 +61,13 @@ $(function() {
     console.log('Fit: ' + ease);
     console.log('Counter: ' + counter);
 
-    var sweater = new Sweater(sweaterTitle);
+    var sweater = new Sweater(sweaterTitle, );
     console.log(sweater);
-     // sets entered name to $userName
-    // localStorage.setItem('sweater', $userName); // puts $userName in localStorage with a key of 'knitter'
+    // localStorage.setItem('sweater1', $userName); // puts sweater in localStorage with a key of 'sweater1'
     // $('#knitter-name').val(''); // removed entered text from form input
   })
 
-  var Sweater = function(sweaterName, options) {
+  var Sweater = function(sweaterName, knitter, options) {
     this.sweaterName = sweaterTitle;
     this.directionUp = direction;
     this.shoulderStyle = shoulders;
@@ -76,7 +75,15 @@ $(function() {
     this.shaping = shaped;
     this.length = hemLong;
     this.fit = ease;
-    this.stitchGauge = stGauge;
-    this.rowGauge = rGauge;
+    this.stsPerInch = stGauge / 4;
+    this.rowsPerInch = rGauge / 4;
   };
+  Sweater.prototype.Body = function() {
+    var CO = this.stsPerInch * ()
+    var el = $('#body');
+    el.text('CO ' +  + '')
+  };
+  console.log(rowsPerInch);
+
+  
 });
