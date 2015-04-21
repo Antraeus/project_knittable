@@ -8,7 +8,23 @@ $(function() {
   var shaped;
   var hemLong;
   var ease;
+  var retrievedUser = JSON.parse(localStorage.getItem('user'));
+  console.log(retrievedUser);
+  var patternLibrary = [];
   var counter = 0;
+  // console.log(window.currentUser);
+  var Sweater = function(sweaterName, knitter, options) {
+    this.sweaterName = sweaterTitle;
+    this.knitter = knitter;
+    this.directionUp = direction;
+    this.shoulderStyle = shoulders;
+    this.neckStyle = crew;
+    this.shaping = shaped;
+    this.length = hemLong;
+    this.fit = ease;
+    this.stsPerInch = stGauge / 4;
+    this.rowsPerInch = rGauge / 4;
+  };
   $("#save-new-design").submit(function () { // listens for the form to submit
     event.preventDefault(); //prevents page refresh
     stGauge = $('#stitch-gauge').val();
@@ -61,29 +77,13 @@ $(function() {
     console.log('Fit: ' + ease);
     console.log('Counter: ' + counter);
 
-    var sweater = new Sweater(sweaterTitle, );
-    console.log(sweater);
-    // localStorage.setItem('sweater1', $userName); // puts sweater in localStorage with a key of 'sweater1'
-    // $('#knitter-name').val(''); // removed entered text from form input
+    patternLibrary.push(new Sweater(sweaterTitle, retrievedUser.name));
+    console.log(patternLibrary[0].knitter)
   })
-
-  var Sweater = function(sweaterName, knitter, options) {
-    this.sweaterName = sweaterTitle;
-    this.directionUp = direction;
-    this.shoulderStyle = shoulders;
-    this.neckStyle = crew;
-    this.shaping = shaped;
-    this.length = hemLong;
-    this.fit = ease;
-    this.stsPerInch = stGauge / 4;
-    this.rowsPerInch = rGauge / 4;
-  };
-  Sweater.prototype.Body = function() {
-    var CO = this.stsPerInch * ()
-    var el = $('#body');
-    el.text('CO ' +  + '')
-  };
-  console.log(rowsPerInch);
-
-  
+  // Sweater.prototype.Body = function() {
+  //   var CO = this.stsPerInch * ()
+  //   var el = $('#body');
+  //   el.text('CO ' +  + '')
+  // };
+  // console.log(this.rowsPerInch); 
 });
