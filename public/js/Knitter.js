@@ -67,7 +67,7 @@ $(function(){
     console.log(visited);
 
     var secondTime = function() {
-      var $retrieveOldSweater = $('<div id="secondTime">Hello! It looks like you\'ve been here before.  Want to retrieve the sweater you made last time?</div>');
+      var $retrieveOldSweater = $('<p id="secondTime">Hello! It looks like you\'ve been here before.  Want to retrieve the sweater you made last time?</p>');
       if (visited === true) {
           var box = $('#retrieve').html($retrieveOldSweater);
           console.log(box);
