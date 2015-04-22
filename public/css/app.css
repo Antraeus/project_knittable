@@ -37,7 +37,7 @@ h1 {
   background-color: hsla(0, 0%, 0%, 1);
   height: 100px;
 }
-span {
+.underline {
   font-weight: 400;
   text-decoration: underline;
   color: hsla(50, 100%, 62%, 1.0);
@@ -137,4 +137,3 @@ button:disabled {
   background-color: white;
   color: #393939;
 }
-
