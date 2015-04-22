@@ -40,33 +40,32 @@
       <p class="design-instructions">Design your custom sweater.</p>
       <form class="pure-form pure-form-aligned" id="save-new-design">
         <fieldset id="field1" class="pure-control-group">
-          <label id="your-sweater" for="project-name">Sweater Name <input type="text" name="project-name" id="project-name" placeholder="Best Sweater Ever"></label>
-          <legend id="guage">Set Your Gauge</legend>
-          <label id="guage" for="stitch-gauge">Stitch-Gauge (over 4 inches) <input type="text" name="stitch-gauge" placeholder="0.0" id="stitch-gauge" size="6"></label>
-          <label id="guage" for="row-gauge">Row-Gauge (over 4 inches) <input type="text" name="row-gauge" placeholder="0.0" id="row-gauge" size="6"><button id="first-step">OK</button></label>
-       <!--  </fieldset> -->
-        <!-- <fieldset id="field2" class="pure-control-group"> -->
-          <legend id="make">Design Your Sweater</legend>
+          <h3 id="guage-legend">Set Your Gauge</h3>
+          <label id="for-project-name" for="project-name">Sweater Name <input type="text" name="project-name" id="project-name" placeholder="Best Sweater Ever"></label>
+          <label id="for-stitch-guage" for="stitch-gauge">Stitch-Gauge (over 4 inches) <input type="text" name="stitch-gauge" placeholder="0.0" id="stitch-gauge" size="6"></label>
+          <label id="for-row-guage" for="row-gauge">Row-Gauge (over 4 inches) <input type="text" name="row-gauge" placeholder="0.0" id="row-gauge" size="6"></label>
+          <label id="for-needle-size" for="needle-size">Needle Size <input type="text" name="needle-size" placeholder="0.0" id="needle-size" size="6"></label><button id="first-step">OK</button>
+          <h3 id="make">Design Your Sweater</h3>
           <p class="reminder"><span>Please Note:</span> this design tool assumes you are working in the round.</p>
-          <p class="how">How will you knit your sweater?</p>
-          <label id= "direcciones1" for="up"><input type="radio" name="direction" id="up">Bottom-Up</label>
-          <label id= "direcciones2" for="down"><input type="radio" name="direction" id="down">Top-down</label>
-          <p class="styling">What sleeve/shoulder style will you use?</p>
-          <label id= "espalda1" for="yoke"><input type="radio" name="shoulder-style" value="yoke" id="yoke">Yoke</label>
-          <label id= "espalda2" for="set-in" class="disabled"><input type="radio" name="shoulder-style" value="set-in" id="set-in">Set-In</label>
-          <label id= "espalda3" for="raglan" class="disabled"><input type="radio" name="shoulder-style" value="raglan" id="raglan">Raglan</label>
-          <p class= "cuello">What neckline will you use?</p>
-          <label id= "cuello1" for="crew"><input type="radio" name="neck-style" id="crew" checked>Crew</label>
-          <label id= "cuello2" for="vee" class="disabled"><input type="radio" name="neck-style" id="vee">Vee</label>
-          <p class= "pecho">Will you have shaping in the torso of your sweater?</p>
-          <label for="yes-shape" class="disabled"><input type="radio" name="shaping" id="yes-shape">Yes</label>
-          <label for="no-shape"><input type="radio" name="shaping" id="no-shape"checked>No</label>
-          <p>How long will your sweater be?</p>
-          <label for="yes-hips" class="disabled"><input type="radio" name="length" id="yes-hips">Extra-long</label>
-          <label for="no-hips"><input type="radio" name="length" id="no-hips" checked>Standard length</label>
-          <p>How much ease do you want?</p>
-          <label for="close"><input type="radio" name="ease" id="close"checked>Close-fitting (2 in)</label>
-          <label for="loose"><input type="radio" name="ease" id="loose">Loose-fitting (4 in)</label>
+          <p class="working-direction">How will you knit your sweater?</p>
+          <label id="for-up" for="up"><input type="radio" name="direction" id="up">Bottom-Up</label>
+          <label id="for-down" for="down"><input type="radio" name="direction" id="down">Top-down</label>
+          <p class="shoulder-construction">What sleeve/shoulder style will you use?</p>
+          <label id="for-yoke" for="yoke"><input type="radio" name="shoulder-style" value="yoke" id="yoke">Yoke</label>
+          <label id="for-set" for="set-in" class="disabled"><input type="radio" name="shoulder-style" value="set-in" id="set-in">Set-In</label>
+          <label id="for-raglan" for="raglan" class="disabled"><input type="radio" name="shoulder-style" value="raglan" id="raglan">Raglan</label>
+          <p class="collar">What neckline will you use?</p>
+          <label id="for-crew" for="crew"><input type="radio" name="neck-style" id="crew" checked>Crew</label>
+          <label id="for-vee" for="vee" class="disabled"><input type="radio" name="neck-style" id="vee">Vee</label>
+          <p class="waist-shape">Will you have shaping in the torso of your sweater?</p>
+          <label id="for-yes-shape" for="yes-shape" class="disabled"><input type="radio" name="shaping" id="yes-shape">Yes</label>
+          <label id="for-no-shape" for="no-shape"><input type="radio" name="shaping" id="no-shape"checked>No</label>
+          <p class="torso-length">How long will your sweater be?</p>
+          <label id="for-yes-hips" for="yes-hips" class="disabled"><input type="radio" name="length" id="yes-hips">Extra-long</label>
+          <label id="for-no-hips" for="no-hips"><input type="radio" name="length" id="no-hips" checked>Standard length</label>
+          <p class="fit">How much ease do you want?</p>
+          <label id="for-close" for="close"><input type="radio" name="ease" id="close"checked>Close-fitting (2 in)</label>
+          <label id="for-loose" for="loose"><input type="radio" name="ease" id="loose">Loose-fitting (4 in)</label>
         </fieldset>
         <button class="save-design" type="submit">Save this Design</button>
       </form>
