@@ -17,6 +17,7 @@
 <script src="js/app.js"></script>
 <script src="js/Sweater.js"></script>
 <script src="js/Knitter.js"></script>
+<script src="js/events.js"></script>
 
 
 
@@ -38,26 +39,26 @@
   <section id="design">
       <p class="design-instructions">Design your custom sweater.</p>
       <form class="pure-form pure-form-aligned" id="save-new-design">
-        <fieldset class="pure-control-group">
-          <legend>Set Your Gauge</legend>
-          <label for="stitch-gauge">Stitch-Gauge (over 4 inches) <input type="text" name="stitch-gauge" placeholder="0.0" id="stitch-gauge" size="6"></label>
-          <label for="row-gauge">Row-Gauge (over 4 inches) <input type="text" name="row-gauge" placeholder="0.0" id="row-gauge" size="6"></label>
-        </fieldset>
-        <fieldset class="pure-control-group">
-          <legend>Design Your Sweater</legend>
+        <fieldset id="field1" class="pure-control-group">
+          <label id="your-sweater" for="project-name">Sweater Name <input type="text" name="project-name" id="project-name" placeholder="Best Sweater Ever"></label>
+          <legend id="guage">Set Your Gauge</legend>
+          <label id="guage" for="stitch-gauge">Stitch-Gauge (over 4 inches) <input type="text" name="stitch-gauge" placeholder="0.0" id="stitch-gauge" size="6"></label>
+          <label id="guage" for="row-gauge">Row-Gauge (over 4 inches) <input type="text" name="row-gauge" placeholder="0.0" id="row-gauge" size="6"><button id="first-step">OK</button></label>
+       <!--  </fieldset> -->
+        <!-- <fieldset id="field2" class="pure-control-group"> -->
+          <legend id="make">Design Your Sweater</legend>
           <p class="reminder"><span>Please Note:</span> this design tool assumes you are working in the round.</p>
-          <label for="project-name">Sweater Name <input type="text" name="project-name" id="project-name" placeholder="Best Sweater Ever"></label>
-          <p>How will you knit your sweater?</p>
-          <label for="up"><input type="radio" name="direction" id="up" checked>Bottom-Up</label>
-          <label for="down" class="disabled"><input type="radio" name="direction" id="down">Top-down</label>
-          <p>What sleeve/shoulder style will you use?</p>
-          <label for="yoke"><input type="radio" name="shoulder-style" value="yoke" id="yoke" checked>Yoke</label>
-          <label for="set-in" class="disabled"><input type="radio" name="shoulder-style" value="set-in" id="set-in">Set-In</label>
-          <label for="raglan" class="disabled"><input type="radio" name="shoulder-style" value="raglan" id="raglan">Raglan</label>
-          <p>What neckline will you use?</p>
-          <label for="crew"><input type="radio" name="neck-style" id="crew" checked>Crew</label>
-          <label for="vee" class="disabled"><input type="radio" name="neck-style" id="vee">Vee</label>
-          <p>Will you have shaping in the torso of your sweater?</p>
+          <p class="how">How will you knit your sweater?</p>
+          <label id= "direcciones1" for="up"><input type="radio" name="direction" id="up">Bottom-Up</label>
+          <label id= "direcciones2" for="down"><input type="radio" name="direction" id="down">Top-down</label>
+          <p class="styling">What sleeve/shoulder style will you use?</p>
+          <label id= "espalda1" for="yoke"><input type="radio" name="shoulder-style" value="yoke" id="yoke">Yoke</label>
+          <label id= "espalda2" for="set-in" class="disabled"><input type="radio" name="shoulder-style" value="set-in" id="set-in">Set-In</label>
+          <label id= "espalda3" for="raglan" class="disabled"><input type="radio" name="shoulder-style" value="raglan" id="raglan">Raglan</label>
+          <p class= "cuello">What neckline will you use?</p>
+          <label id= "cuello1" for="crew"><input type="radio" name="neck-style" id="crew" checked>Crew</label>
+          <label id= "cuello2" for="vee" class="disabled"><input type="radio" name="neck-style" id="vee">Vee</label>
+          <p class= "pecho">Will you have shaping in the torso of your sweater?</p>
           <label for="yes-shape" class="disabled"><input type="radio" name="shaping" id="yes-shape">Yes</label>
           <label for="no-shape"><input type="radio" name="shaping" id="no-shape"checked>No</label>
           <p>How long will your sweater be?</p>
