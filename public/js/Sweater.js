@@ -1,6 +1,7 @@
 $(function() {
   var stGauge;
   var rGauge;
+  var needles;
   var sweaterTitle;
   var direction;
   var shoulders;
@@ -37,6 +38,7 @@ $(function() {
     this.knitter = knitter;
     this.stGauge = stGauge;
     this.rGauge = rGauge;
+    this.needles = needles;
     this.directionUp = direction;
     this.shoulderStyle = shoulders;
     this.neckStyle = crew;
@@ -45,6 +47,7 @@ $(function() {
     this.fit = ease;
     this.stsPerInch = Math.round(stGauge / 4); //these values are correct
     this.rowsPerInch = Math.round(rGauge / 4);
+    this.arrayIndex = counter - 1;
   };
   Sweater.prototype.castOn = function() {
     arrayIndex = counter - 1;
@@ -52,13 +55,14 @@ $(function() {
     var rowsPerInch = patternLibrary[arrayIndex].rowsPerInch;
     var chest = retrievedSizes[sizeIndex].chest;
     var hemCO = ((ease + chest) * stsPerInch);
+    console.log(sweaterTitle);
     localStorage.setItem('castOn', JSON.stringify(hemCO));
     localStorage.setItem('stsPerInch', JSON.stringify(stsPerInch));
     localStorage.setItem('rowsPerInch', JSON.stringify(rowsPerInch));
     localStorage.setItem('ease', JSON.stringify(ease));
+
   };
   Sweater.prototype.noShapeTorso = function() {
-    arrayIndex = counter - 1;
     var rowsPerInch = patternLibrary[arrayIndex].rowsPerInch;
     var backLength = retrievedSizes[sizeIndex].backLength;
     var armHole = retrievedSizes[sizeIndex].armHole;
@@ -183,11 +187,15 @@ $(function() {
     counter++
     stGauge = Number.parseInt($('#stitch-gauge').val());
     rGauge = Number.parseInt($('#row-gauge').val());
+    needles = Number.parseInt($('#needles').val());
     patternLibrary.push(new Sweater(sweaterTitle, retrievedUser.name));
     Sweater.prototype.castOn();
     Sweater.prototype.noShapeTorso();
     Sweater.prototype.yokeSleeves();
     Sweater.prototype.yokeShoulders();
+    var sweaterNumber = 'sweater' + counter + ': ' + sweaterTitle;
+    var sweaterProject = patternLibrary[counter-1];
+    localStorage.setItem('sweaterNumber', JSON.stringify(sweaterProject));
   })
   
 });
