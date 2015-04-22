@@ -102,15 +102,45 @@ $(function() {
     var frontSts = (hemCO - 2 * underarmGusset) / 2;
     var liveSts = backSts + frontSts + 2 * liveSleeveSts;
     var heldSts = underarmGusset * 4;
-    console.log('Live sts: ' + liveSts);
-    console.log('Held sts: ' + heldSts);
+    var startYoke = stsPerInch * 4;
+    // yoke decrease ratios
+    var dec0 = liveSts;
+    var dec1 = Math.round((1/8) * dec0);
+    var afterDec1 = dec0 - dec1;
+    var dec2 = Math.round(0.143 * afterDec1);
+    var afterDec2 = afterDec1 - dec2;
+    var dec3 = Math.round(0.167 * afterDec2);
+    var afterDec3 = afterDec2 - dec3;
+    var dec4 = Math.round(0.2 * afterDec3);
+    var afterDec4 = afterDec3 - dec4;
+    var dec5 = Math.round(0.25 * afterDec4);
+    var afterDec5 = afterDec4 - dec5;
+    var decInt1 = Math.round(1.8 * rowsPerInch);
+    var decInt2 = Math.round(0.9 * decInt1);
+    var decInt3 = Math.round(0.6 * decInt2);
+    var decInt4 = Math.round(0.8 * decInt3);
     localStorage.setItem('backSts', JSON.stringify(backSts));
     localStorage.setItem('frontSts', JSON.stringify(frontSts));
     localStorage.setItem('liveSts', JSON.stringify(liveSts));
-    localStorage.setItem('heldSts', JSON.stringify(heldSts));    
+    localStorage.setItem('heldSts', JSON.stringify(heldSts));
+    localStorage.setItem('startYoke', JSON.stringify(startYoke));
+    localStorage.setItem('dec1', JSON.stringify(dec1)); 
+    localStorage.setItem('afterDec1', JSON.stringify(afterDec1));
+    localStorage.setItem('dec2', JSON.stringify(dec2)); 
+    localStorage.setItem('afterDec2', JSON.stringify(afterDec2));
+    localStorage.setItem('dec3', JSON.stringify(dec3)); 
+    localStorage.setItem('afterDec3', JSON.stringify(afterDec3));
+    localStorage.setItem('dec4', JSON.stringify(dec4)); 
+    localStorage.setItem('afterDec4', JSON.stringify(afterDec4));
+    localStorage.setItem('dec5', JSON.stringify(dec5)); 
+    localStorage.setItem('afterDec5', JSON.stringify(afterDec5));  
+    localStorage.setItem('decInt1', JSON.stringify(decInt1));
+    localStorage.setItem('decInt2', JSON.stringify(decInt2));
+    localStorage.setItem('decInt3', JSON.stringify(decInt3));
+    localStorage.setItem('decInt4', JSON.stringify(decInt4));  
   };
-  $("#save-new-design").submit(function () { // listens for the form to submit
-    event.preventDefault(); //prevents page refresh
+  $("#save-new-design").submit(function () { 
+    event.preventDefault(); 
     sweaterTitle = $('#project-name').val();
     if ($('#up').prop('checked')) {
       direction = true;
