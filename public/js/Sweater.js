@@ -187,7 +187,7 @@ $(function() {
     counter++
     stGauge = Number.parseInt($('#stitch-gauge').val());
     rGauge = Number.parseInt($('#row-gauge').val());
-    needles = Number.parseInt($('#needles').val());
+    needles = Number.parseInt($('#needle-size').val());
     patternLibrary.push(new Sweater(sweaterTitle, retrievedUser.name));
     Sweater.prototype.castOn();
     Sweater.prototype.noShapeTorso();
