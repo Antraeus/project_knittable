@@ -97,11 +97,17 @@ $(function() {
     var underarmGusset = Math.floor((0.2 * (finalArmCirc)) * stsPerInch);
     var chest = retrievedSizes[sizeIndex].chest;
     var hemCO = ((ease + chest) * stsPerInch);
+    var liveSleeveSts = finalArmCirc * stsPerInch - underarmGusset;
     var backSts = (hemCO - 2 * underarmGusset) / 2;
-    console.log(backSts);
-    // localStorage.setItem('cuffCO', JSON.stringify(cuffCO));
-    // localStorage.setItem('incNum', JSON.stringify(incInterval));
-    // localStorage.setItem('incInt', JSON.stringify(incInterval));
+    var frontSts = (hemCO - 2 * underarmGusset) / 2;
+    var liveSts = backSts + frontSts + 2 * liveSleeveSts;
+    var heldSts = underarmGusset * 4;
+    console.log('Live sts: ' + liveSts);
+    console.log('Held sts: ' + heldSts);
+    localStorage.setItem('backSts', JSON.stringify(backSts));
+    localStorage.setItem('frontSts', JSON.stringify(frontSts));
+    localStorage.setItem('liveSts', JSON.stringify(liveSts));
+    localStorage.setItem('heldSts', JSON.stringify(heldSts));    
   };
   $("#save-new-design").submit(function () { // listens for the form to submit
     event.preventDefault(); //prevents page refresh
