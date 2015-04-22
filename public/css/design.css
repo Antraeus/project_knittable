@@ -1,0 +1,52 @@
+.design-main {
+  width: 1200px;
+  min-height: 800px;
+  margin-bottom: 10px;
+}
+#design {
+  float: left;
+  margin-left: 20px;
+  margin-top: 40px;
+  overflow: auto;
+}
+.design-instructions {
+  margin-bottom: 15px;
+  font-size: 140%;
+}
+.design-description{
+  margin-top: 5px;
+}
+.reminder {
+  font-style: italic;
+}
+fieldset p{
+  font-size: 110%;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+#render {
+  float: left;
+  position: fixed;
+  margin-top: 77px;
+  margin-left: 680px;
+  margin-right: 10px;
+  width: 501px;
+  height: 420px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+#canvas1, #canvas2, #canvas3, #canvas4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#library {
+  margin-left: 20px;
+  margin-top: 20px;
+  clear: left;
+}
+.save-design {
+  margin-left: 400px;
+  font-size: 120%;
+  border-radius: 10px;
+}

@@ -9,6 +9,7 @@
 <link type="text/css" href="css/reset.css" rel="stylesheet"/>
 <link type="text/css" href="css/pure_forms.css" rel="stylesheet"/>
 <link type="text/css" href="css/app.css" rel="stylesheet"/>
+<link type="text/css" href="css/design.css" rel="stylesheet"/>
 
 <!-- JAVASCRIPT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -29,12 +30,13 @@
       <h1>PROJECT: Knittable</h1>
     </section>
 
-    <nav><a href="index.html"><button class="nav-buttons" id="nav-home">Home</button></a><a href="design.html"><button class="nav-buttons">Design</button></a><a href="pattern.html"><button class="nav-buttons">Pattern</button></a><a href="about.html"><button class="nav-buttons">About</button></a></nav>
+    <nav><a href="index.html"><button class="nav-buttons" >Home</button></a><a href="design.html"><button class="nav-buttons" id="nav-design">Design</button></a><a href="pattern.html"><button class="nav-buttons">Pattern</button></a><a href="about.html"><button class="nav-buttons">About</button></a></nav>
 
   </header>
-<main>
-<section id="design">
-      <p>Use the following choices to design your custom sweater.</p>
+
+<main class="design-main">
+  <section id="design">
+      <p class="design-instructions">Use the following choices to design your custom sweater.</p>
       <form class="pure-form pure-form-aligned" id="save-new-design">
         <fieldset class="pure-control-group">
           <legend>Set Your Gauge</legend>
@@ -43,7 +45,7 @@
         </fieldset>
         <fieldset class="pure-control-group">
           <legend>Design Your Sweater</legend>
-          <p>Remember, this design tool assumes you are working in the round.</p>
+          <p class="reminder">Remember, this design tool assumes you are working in the round.</p>
           <label for="project-name">Sweater Name <input type="text" name="project-name" id="project-name" placeholder="Best Sweater Ever"></label>
           <p>How will you knit your sweater?</p>
           <label for="up"><input type="radio" name="direction" id="up" checked>Bottom-Up</label>
@@ -65,19 +67,16 @@
           <label for="close"><input type="radio" name="ease" id="close"checked>Close-fitting (2 in)</label>
           <label for="loose"><input type="radio" name="ease" id="loose">Loose-fitting (4 in)</label>
         </fieldset>
-        <button type="submit">Save this Design</button>
+        <button class="save-design" type="submit">Save this Design</button>
       </form>
-    </section>
-    <section id="render">
+  </section>
+  <section id="render">
       <canvas id="canvas1" width="501" height="501">Sweater schematic</canvas>
       <canvas id="canvas2" width="501" height="501">Sweater schematic</canvas>
       <canvas id="canvas3" width="501" height="501">Sweater schematic</canvas>
       <canvas id="canvas4" width="501" height="501">Sweater schematic</canvas>
-    </section>
-    <section id="library">
-      <h4>Completed Designs</h4>
-    </section>
-
+  </section>
+</main>
 </body>
 </html>
 
