@@ -1,0 +1,79 @@
+h1 span {
+  color: hsla(178, 83%, 55%, 0.9);
+}
+.design-main {
+  width: 1200px;
+  min-height: 800px;
+  margin-bottom: 10px;
+  font-family: Helvetica;
+  color: white;
+}
+#design {
+  float: left;
+  margin-left: 20px;
+  margin-top: 40px;
+  overflow: auto;
+
+}
+#save-new-design {
+  background-color: hsla(0, 0%, 0%, 0.7);
+}
+.design-instructions {
+  padding: 10px;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  border: 1px solid hsla(178, 83%, 55%, 0.8);
+  margin-bottom: 15px;
+  font-size: 140%;
+}
+.design-description{
+  margin-top: 5px;
+}
+.reminder {
+  font-size: 115%;
+  text-shadow: 0px 1px 1px black;
+}
+.reminder span {
+  color: hsla(178, 83%, 55%, 0.8);
+  text-decoration: none;
+}
+fieldset p{
+  font-size: 110%;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+#render {
+  float: left;
+  position: fixed;
+  margin-top: 97px;
+  margin-left: 680px;
+  margin-right: 10px;
+  width: 501px;
+  height: 420px;
+  background-color: white;
+  /*border: 1px solid black;*/
+  border-radius: 10px;
+}
+#canvas1, #canvas2, #canvas3, #canvas4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#library {
+  margin-left: 20px;
+  margin-top: 20px;
+  clear: left;
+}
+.save-design {
+  text-shadow: 0px 1px 1px black;
+  margin-left: 400px;
+  font-size: 120%;
+  border: 1px solid hsla(178, 83%, 55%, 0.8);
+  border-radius: 10px;
+  background-color: hsla(0, 0%, 0%, 0.0);
+  color: white;
+}
+
+.save-design:hover {
+  text-shadow: 0px 1px 1px black;
+  color: white;
+  background-color: hsla(178, 83%, 55%, 0.8);
