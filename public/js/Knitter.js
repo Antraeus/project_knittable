@@ -60,7 +60,9 @@ $(function(){
     }
     knitterName = $('#knitter-name').val();
     currentUser = new Knitter (knitterName);
+    console.log(sizes[0]);
     localStorage.setItem('user', JSON.stringify(currentUser)); // puts currentUser in localStorage with a key of 'user'
+    localStorage.setItem('sizes', JSON.stringify(sizes)); //puts sizes array into local storage with a key of 'sizes'
 
 
   });
