@@ -1,3 +1,4 @@
+
 'use strict';
 $(function() {
   var retUser = JSON.parse(localStorage.getItem('user'));
@@ -7,6 +8,7 @@ $(function() {
   var retStsPerInch = JSON.parse(localStorage.getItem('stsPerInch'));
   var retRowsPerInch = JSON.parse(localStorage.getItem('rowsPerInch'));
   var retEase = JSON.parse(localStorage.getItem('ease'));
+  var retNeedles = JSON.parse(localStorage.getItem('needles'));
   var sizeIndex;
     if (retUser.size === 'XS') {
       sizeIndex = 0;
@@ -62,7 +64,7 @@ $(function() {
   var elTitle = $('#sweater-name');
   elTitle.html('Sweater: ' + retCurrentSweater.sweaterName);
   var elSetup = $('#setup');
-  elSetup.html('Your sweater will be size ' + displaySize + '. Your working gauge is ' + retStsPerInch + ' sts per inch and ' + retRowsPerInch + ' rows per inch on size ' + retRowsPerInch + ' needles.');
+  elSetup.html('Your sweater will be size ' + displaySize + '. Your working gauge is ' + retStsPerInch + ' sts per inch and ' + retRowsPerInch + ' rows per inch on size ' + retNeedles + ' needles.');
 
 
 
