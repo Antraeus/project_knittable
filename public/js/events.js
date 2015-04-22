@@ -1,30 +1,58 @@
 $(function() {
-  $('label:not(#guage, #your-sweater)').hide();
-  $('legend:not(#guage)').hide();
+  $('h4:not(#guage-legend)').hide();
+  $('label:not(#for-project-name, #for-row-guage, #for-needle-size, #for-stitch-guage)').hide();
   $('p:not(.design-instructions)').hide();
-  $('#your-sweate')
   $('.save-design').hide();
+  $('hr:not(#first-break)').hide();
 });
 
   $(function() {
     $('#first-step').on('click', function() {
       $('#make').fadeIn(700);
+      $('#second-break').fadeIn(700);
       $('.reminder').fadeIn(700);
       $('.how').fadeIn(700);
-      $('#direcciones1, #direcciones2').fadeIn(700);
+      $('#for-up, #for-down').fadeIn(700);
     });
   });
 
 $(function() {
   $('#up').on('click', function() {
-    $('.styling').fadeIn(700);
-    $('#espalda1, #espalda2, #espalda3').fadeIn(700);
+    $('.shoulder-construction').fadeIn(700);
+    $('#for-yoke, #for-set, #for-raglan').fadeIn(700);
   });
 });
 
 $(function() {
   $('#yoke').on('click', function() {
-    $('.cuello').fadeIn(700);
-    $('#cuello1, #cuello2').fadeIn(700);
+    $('.collar').fadeIn(700);
+    $('#for-crew, #for-vee').fadeIn(700);
+  });
+});
+
+$(function() {
+  $('#crew').on('click', function() {
+    $('.waist-shape').fadeIn(700);
+    $('#for-yes-shape, #for-no-shape'). fadeIn(700);
+  });
+});
+
+$(function() {
+  $('#no-shape').on('click', function() {
+    $('.torso-length').fadeIn(700);
+    $('#for-yes-hips, #for-no-hips').fadeIn(700);
+  });
+});
+
+$(function() {
+  $('#no-hips').on('click', function() {
+    $('.fit').fadeIn(700);
+    $('#for-loose, #for-close').fadeIn(700);
+  });
+});
+
+$(function() {
+  $('#close').on('click', function() {
+    $('.save-design').fadeIn(700);
   });
 });
