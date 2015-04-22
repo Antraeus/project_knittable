@@ -18,6 +18,7 @@
 .design-instructions {
   padding: 10px;
   background-color: hsla(0, 0%, 0%, 0.7);
+  border: 1px solid hsla(178, 83%, 55%, 0.8);
   margin-bottom: 15px;
   font-size: 140%;
 }
@@ -27,6 +28,10 @@
 .reminder {
   font-size: 115%;
   text-shadow: 0px 1px 1px black;
+}
+span {
+  color: hsla(178, 83%, 55%, 0.8);
+  text-decoration: none;
 }
 fieldset p{
   font-size: 110%;
