@@ -62,6 +62,19 @@ $(function(){
     currentUser = new Knitter (knitterName);
     localStorage.setItem('user', JSON.stringify(currentUser)); // puts currentUser in localStorage with a key of 'user'
     localStorage.setItem('sizes', JSON.stringify(sizes)); //puts sizes array into local storage with a key of 'sizes'
+    var visited = JSON.parse(localStorage.getItem('visited'));
+    console.log(typeof(visited));
+    console.log(visited);
+
+    var secondTime = function() {
+      var $retrieveOldSweater = $('<div id="secondTime">Hello! It looks like you\'ve been here before.  Want to retrieve the sweater you made last time?</div>');
+      if (visited === true) {
+          var box = $('#retrieve').html($retrieveOldSweater);
+          console.log(box);
+          console.log('I hear you');
+      } 
+    }
+    secondTime();
 
 
   });

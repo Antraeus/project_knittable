@@ -55,18 +55,18 @@ $(function() {
     var rowsPerInch = patternLibrary[arrayIndex].rowsPerInch;
     var chest = retrievedSizes[sizeIndex].chest;
     var hemCO = ((ease + chest) * stsPerInch);
-    console.log(sweaterTitle);
     localStorage.setItem('castOn', JSON.stringify(hemCO));
     localStorage.setItem('stsPerInch', JSON.stringify(stsPerInch));
     localStorage.setItem('rowsPerInch', JSON.stringify(rowsPerInch));
     localStorage.setItem('ease', JSON.stringify(ease));
+    localStorage.setItem('needles', JSON.stringify(needles));
 
   };
   Sweater.prototype.noShapeTorso = function() {
     var rowsPerInch = patternLibrary[arrayIndex].rowsPerInch;
     var backLength = retrievedSizes[sizeIndex].backLength;
     var armHole = retrievedSizes[sizeIndex].armHole;
-    var torsoLengthR = ((backLength - armHole + 6) * rowsPerInch);
+    var torsoLengthR = Math.round((backLength - armHole + 6) * rowsPerInch);
     var torsoLengthIn = backLength - armHole + 6;
     localStorage.setItem('torsoR', JSON.stringify(torsoLengthR));
     localStorage.setItem('torsoIn', JSON.stringify(torsoLengthIn));
@@ -196,6 +196,10 @@ $(function() {
     var sweaterNumber = 'sweater' + counter + ': ' + sweaterTitle;
     var sweaterProject = patternLibrary[counter-1];
     localStorage.setItem('sweaterNumber', JSON.stringify(sweaterProject));
+    var visited = true;
+    localStorage.setItem('visited', JSON.stringify(visited));
+    console.log(visited);
+    console.log(typeof(visited));
   })
   
 });
