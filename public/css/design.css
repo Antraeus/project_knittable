@@ -1,3 +1,6 @@
+h1 span {
+  color: hsla(178, 83%, 55%, 0.8);
+}
 .design-main {
   width: 1200px;
   min-height: 800px;
@@ -29,7 +32,7 @@
   font-size: 115%;
   text-shadow: 0px 1px 1px black;
 }
-span {
+.reminder span {
   color: hsla(178, 83%, 55%, 0.8);
   text-decoration: none;
 }
