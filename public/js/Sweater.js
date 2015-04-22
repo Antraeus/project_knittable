@@ -48,11 +48,14 @@ $(function() {
   };
   Sweater.prototype.castOn = function() {
     arrayIndex = counter - 1;
-    console.log('Sts per inch: ' + patternLibrary[arrayIndex].stsPerInch);
     var stsPerInch = patternLibrary[arrayIndex].stsPerInch;
+    var rowsPerInch = patternLibrary[arrayIndex].rowsPerInch;
     var chest = retrievedSizes[sizeIndex].chest;
     var hemCO = ((ease + chest) * stsPerInch);
     localStorage.setItem('castOn', JSON.stringify(hemCO));
+    localStorage.setItem('stsPerInch', JSON.stringify(stsPerInch));
+    localStorage.setItem('rowsPerInch', JSON.stringify(rowsPerInch));
+    localStorage.setItem('ease', JSON.stringify(ease));
   };
   Sweater.prototype.noShapeTorso = function() {
     arrayIndex = counter - 1;
@@ -180,18 +183,6 @@ $(function() {
     counter++
     stGauge = Number.parseInt($('#stitch-gauge').val());
     rGauge = Number.parseInt($('#row-gauge').val());
-    console.log('St Gauge: ' + stGauge);
-    console.log('St Gauge type: ' + typeof(stGauge));
-    console.log('Row Gauge: ' + rGauge);
-    console.log('Row Gauge type: ' + typeof(rGauge));
-    console.log('Sweater Title: ' + sweaterTitle);
-    console.log('Direction Up: ' + direction);
-    console.log('Shoulders: ' + shoulders);
-    console.log('Crew neck: ' + crew);
-    console.log('Shaped: ' + shaped);
-    console.log('Long: ' + hemLong);
-    console.log('Fit: ' + ease);
-    console.log('Counter: ' + counter);
     patternLibrary.push(new Sweater(sweaterTitle, retrievedUser.name));
     Sweater.prototype.castOn();
     Sweater.prototype.noShapeTorso();
