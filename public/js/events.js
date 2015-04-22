@@ -52,6 +52,9 @@ $(function() {
 });
 
 $(function() {
+  $('#loose').on('click', function() {
+    $('.save-design').fadeIn(700);
+  });
   $('#close').on('click', function() {
     $('.save-design').fadeIn(700);
   });
