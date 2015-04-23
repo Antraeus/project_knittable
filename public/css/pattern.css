@@ -7,11 +7,45 @@
 }
 #directions {
   background-color: hsla(0, 0%, 0%, 0.7);
-  margin: 1.5em;
+  margin: 2.5em auto;
   padding-left: 1.5em;
   color: white;
+  width: 70%;
+}
+#print-this {
+  color: #fff;
+  border: 1px solid hsla(99, 83%, 56%, 0.9);
+  margin-top: 20px;
+  background-color: hsla(0, 0%, 0%, 0.0);
+  border-radius: 10px;
+  text-shadow: 0px 1.5px 1.5px black;
+}
+#print-this:hover {
+  background-color: hsla(99, 83%, 56%, 0.9);
+  text-shadow: 0px 1.0px 1.0px black;
 }
 
+
+h4 {
+  margin: 1em 0;
+}
 p {
-  margin: .6em 1em;
+  margin: .5em 1em;
+}
+li {
+  margin: .5em 3em;
+}
+table {
+  text-align: left;
+  border: 1px solid #fff;
+  margin-top: 1em;
+}
+th, td {
+  padding: .2em;
+  margin: .1em;
+}
+th {
+  text-align: right;
+  font-style: italic;
+  padding-right: 1em;
 }
