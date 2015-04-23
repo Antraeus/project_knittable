@@ -1,3 +1,58 @@
+h2 {
+  color: white;
+  font-family: Courier, serif;
+  font-size: 250%;
+  padding: .5em 0 .5em 0;
+}
+h3 {
+  /*clear: left;*/
+}
+p {
+  line-height: 1.5em;
+}
+ul {
+  margin: 1em 0 1em 3em;
+  padding-bottom: 2em;
+  line-height: 2em;
+}
+main {
+  font-family: Helvetica;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  margin: 2.5em auto;
+  padding-left: 1.5em;
+  color: white;
+  width: 90%;
+}
 .underline {
   color: hsla(14, 100%, 58%, 0.9);
 }
+.team-member {
+  float: left;
+  width: 30%;
+  margin: 1em .5em 2em 0;
+  padding: .5em;
+  border: 1px solid #fff;
+}
+#molly {
+  border-color: #3a9d82;
+}
+#molly h3, #phil h3 {
+  margin-top: -50px;
+  margin-bottom: 10px;
+}
+p.image img {
+  margin-top: 0;
+}
+#phil {
+  border-color: #d27941;
+}
+#aristide {
+  border-color: #ab9858;
+}
+#authors {
+  width: 100%;
+}
+#future {
+  clear: both;
+}
+

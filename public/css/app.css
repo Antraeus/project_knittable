@@ -4,10 +4,10 @@ html {
   background-color: hsla(0, 0%, 0%, 0.9);
 }
 body {
-  width: 1200px;
+  width: 70em;
   font-size: 1em;
   color: #000;
-  background: url(earthtone.jpg) no-repeat fixed center;
+  background: url(../images/earthtone.jpg) no-repeat fixed center;
   margin-left: auto;
   margin-right: auto;
 
@@ -24,10 +24,8 @@ header {
 /*** title __________________________*/
 
 h1 {
-  /*width: 522px;*/
   padding-right: 5px;
   padding-left: 5px;
-  /*border: 1px solid black;*/
   background-color: hsla(0, 0%, 0%, 1);
   color: white;
   font-family: Courier, serif;
@@ -116,9 +114,6 @@ a:hover {
 /*** forms __________________________*/
 
 form {
-/*  border: 1px solid #393939;*/
-  /*border-radius: 10px;*/
-  /*width: 90%;*/
   padding: 1.5em;
 }
 
