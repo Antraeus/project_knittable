@@ -1,6 +1,6 @@
 $(function() {
   $('h4:not(#guage-legend)').hide();
-  $('label:not(#for-project-name, #for-row-guage, #for-needle-size, #for-stitch-guage, #working_direction').hide();
+  $('label:not(#for-project-name, #for-row-guage, #for-needle-size, #for-stitch-guage, #working-direction)').hide();
   $('p:not(.design-instructions)').hide();
   $('hr:not(#first-break)').hide()
   $('#go-to-pattern').hide();
