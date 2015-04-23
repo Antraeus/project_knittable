@@ -1,6 +1,7 @@
 # Team name: Project Knittable
 
 ### Team Members: Philip Hirt, Molly Kent, Aristide Tosi
+![Alt text](css/molly.png)![Alt text](css/philip.png)![Alt text](/css/aristide.png)
 
 ## Project Concept: Sweater Recipe/Calculator.
 
