@@ -32,8 +32,18 @@ $(function(){
   sizes.push(new Size('XXL', {
     chest: 50, sleeve: 18, upperArm: 15.5, armHole: 9, waist: 42, hips: 53, backLength: 18}));
 
+  $(function() {
+      $('.start-design').click(function(){
+        window.location.href='design.html';
+      });
+    });
+
+  $(function() {
+    $('.start-design').hide();
+  });
+
   $("#nameSave").submit(function () {
-    event.preventDefault(); 
+    event.preventDefault();
     sizeIndex = 0;
     if ($('#XS').prop('checked')){
       sweaterSize = sizes[0].label;
@@ -62,21 +72,44 @@ $(function(){
     currentUser = new Knitter (knitterName);
     localStorage.setItem('user', JSON.stringify(currentUser)); // puts currentUser in localStorage with a key of 'user'
     localStorage.setItem('sizes', JSON.stringify(sizes)); //puts sizes array into local storage with a key of 'sizes'
-    var visited = JSON.parse(localStorage.getItem('visited'));
+    $('#submit').fadeOut();
+    $('.start-design').fadeIn();
+
     console.log(typeof(visited));
     console.log(visited);
-
-    var secondTime = function() {
-      var $retrieveOldSweater = $('<p id="secondTime">Hello! It looks like you\'ve been here before.  Want to retrieve the sweater you made last time?</p>');
-      if (visited === true) {
-          var box = $('#retrieve').html($retrieveOldSweater);
-          console.log(box);
-          console.log('I hear you');
-      } 
-    }
-    secondTime();
-
-
   });
+
+  var visited = JSON.parse(localStorage.getItem('visited'));
+  var secondTime = function() {
+    var $retrieveOldSweater = $('<p id="secondTime">Hello! It looks like you\'ve been here before.  Want to retrieve the sweater you made last time?</p>');
+    if (visited === true) {
+      $('.enter-name').hide();
+      var $newHomeSection = $('<section class="alternate-enter-name"></section>');
+      $('.welcome').after($newHomeSection);
+      $newHomeSection.append($retrieveOldSweater);
+      var $homePatternButton = $('<button id="to-pattern">Pattern ></button>');
+      $('p#secondTime').after($homePatternButton);
+      var $startNewDesign = $('<p id="startNew">If you\'d like to make a new pattern clear your old pattern first.</p>');
+      $('.alternate-enter-name').append($startNewDesign);
+      var $clearButton = $('<button id="clearPattern">Clear</button>');
+      $('p#startNew').after($clearButton);
+    }
+  }
+
+   $(function() {
+    $('#to-pattern').click(function() {
+      window.location.href='pattern.html';
+    });
+  });
+
+  $(function() {
+    $('#clearPattern').click(function() {
+      localStorage.clear();
+      $('.alternate-enter-name').hide();
+      $('.enter-name').show();
+    });
+  });
+
+  secondTime();
 });
 
