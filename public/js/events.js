@@ -5,7 +5,6 @@ $(function() {
   $('hr:not(#first-break)').hide()
   $('.go-to-pattern').hide();
   $('.save-design').hide();
-  ;
 });
 
 $(function() {

@@ -64,9 +64,23 @@ fieldset p{
   margin-top: 20px;
   clear: left;
 }
+#first-step {
+  text-shadow: 0px 1px 1px black;
+  margin-left: 10px;
+  /*font-size: 120%;*/
+  border: 1px solid hsla(178, 83%, 55%, 0.8);
+  border-radius: 10px;
+  background-color: hsla(0, 0%, 0%, 0.0);
+  color: white;
+}
+#first-step:hover {
+  text-shadow: 0px 1px 1px black;
+  color: white;
+  background-color: hsla(178, 83%, 55%, 0.8);
+}
 .save-design {
   text-shadow: 0px 1px 1px black;
-  margin-left: 400px;
+ /* margin-left: 400px;*/
   font-size: 120%;
   border: 1px solid hsla(178, 83%, 55%, 0.8);
   border-radius: 10px;
@@ -78,3 +92,18 @@ fieldset p{
   text-shadow: 0px 1px 1px black;
   color: white;
   background-color: hsla(178, 83%, 55%, 0.8);
+}
+.go-to-pattern {
+  text-shadow: 0px 1px 1px black;
+ /* margin-left: 400px;*/
+  font-size: 120%;
+  border: 1px solid hsla(99, 83%, 56%, 0.9);
+  border-radius: 10px;
+  background-color: hsla(0, 0%, 0%, 0.0);
+  color: white;
+}
+
+.go-to-pattern:hover {
+  background-color: hsla(99, 83%, 56%, 0.9);
+  text-shadow: 0px 1.0px 1.0px black;
+}
