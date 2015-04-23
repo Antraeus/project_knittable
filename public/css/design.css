@@ -3,8 +3,10 @@
 }
 .design-main {
   width: 70em;
-  min-height: 800px;
-  margin-bottom: 10px;
+  font-family: Helvetica;
+  color: white;
+  overflow: auto;
+  padding-bottom: 1em;
 }
 #design {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
