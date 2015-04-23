@@ -13,6 +13,12 @@ header {
   margin-bottom: 5px;
   background-color: hsla(0, 0%, 0%, 0.5);
 }
+footer {
+  text-align: center;
+  color: hsla(0, 0%, 100%, 0.8);
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; 
+  height: 2em;
+}
 h1 {
   padding-top: 10px;
   padding-right: 5px;
@@ -41,7 +47,7 @@ a:hover {
   color: hsla(14, 100%, 58%, 0.8);
 }
 nav {
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 form {
   padding: 1.5em;
