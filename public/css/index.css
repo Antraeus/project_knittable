@@ -42,6 +42,49 @@
   color: white;
 }
 
+.alternate-enter-name {
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 100%;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  color: white;
+}
+.alternate-enter-name p {
+  margin: 20px;
+}
+#to-pattern {
+  text-shadow: 0px 1px 1px black;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 110%;
+  border: 1px solid hsla(99, 83%, 56%, 0.9);
+  border-radius: 10px;
+  background-color: hsla(0, 0%, 0%, 0.0);
+  color: white;
+}
+#to-pattern:hover {
+  background-color: hsla(99, 83%, 56%, 0.9);
+  text-shadow: 0px 1.0px 1.0px black;
+}
+#clearPattern {
+  font-size: 110%;
+  border: 1px solid hsla(50, 100%, 62%, 0.8);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: hsla(0, 0%, 0%, 0.0);
+  border-radius: 10px;
+  color: white;
+  text-shadow: 0px 1.5px 1.5px black;
+}
+#clearPattern:hover {
+  background-color: hsla(50, 100%, 62%, 0.9);
+  text-shadow: 0px 1.0px 1.0px black;
+}
 fieldset p {
   margin: 20px;
 }

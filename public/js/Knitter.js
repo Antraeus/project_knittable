@@ -81,7 +81,7 @@ $(function(){
 
   var visited = JSON.parse(localStorage.getItem('visited'));
   var secondTime = function() {
-    var $retrieveOldSweater = $('<p id="secondTime">Hello! It looks like you\'ve been here before.  Want to retrieve the sweater you made last time?</p>');
+    var $retrieveOldSweater = $('<p>Hello! It looks like you\'ve been here before.</p><p id="secondTime">Want to retrieve the sweater you made last time?</p>');
     if (visited === true) {
       $('.enter-name').hide();
       var $newHomeSection = $('<section class="alternate-enter-name"></section>');

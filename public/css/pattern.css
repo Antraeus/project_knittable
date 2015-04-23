@@ -6,6 +6,7 @@
   padding: 0;
 }
 #directions {
+  font-family: Helvetica;
   background-color: hsla(0, 0%, 0%, 0.7);
   margin: 2.5em auto;
   padding-left: 1.5em;
