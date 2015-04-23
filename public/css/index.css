@@ -1,7 +1,7 @@
 /* Main
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->*/
 #main1 {
-  font-family: Arial;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   width: 60%;
   /*padding-top: 30px;*/
   padding-bottom:30px;
@@ -15,21 +15,30 @@
   color: white;
 }
 .welcome {
-  font-size: 120%;
- /* width: 60%;*/
-  margin-top: 1em;
+  word-spacing: .02em;
+  margin-top: .5em;
   margin-bottom: 1em;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding: 30px;
+  padding: 20px;
   background-color: hsla(0, 0%, 0%, 0.7);
   color: white;
 }
+#retrieve {
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+#tell-us {
+  font-sive:1.2em;
+  font-weight: 100;
+}
+
 .welcome p {
   margin-bottom: 1em;
-  line-height: 1.2em;
-  font-weight: lighter;
+  line-height: 1.5em;
+  font-weight: 200;
 }
 
 .enter-name {
@@ -37,9 +46,20 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 100%;
+  font-size: 1em;
+  font-weight: 150;
   background-color: hsla(0, 0%, 0%, 0.7);
   color: white;
+}
+
+#choose-size {
+  font-size: 1.2em;
+  font-weight: 150;
+}
+
+label {
+  font-weight: 100;
+  word-spacing: 0.2em;
 }
 
 .alternate-enter-name {
@@ -97,10 +117,7 @@ fieldset p {
   color: white;
   text-shadow: 0px 1.5px 1.5px black;
 }*/
-#submit:hover {
-  background-color: hsla(50, 100%, 62%, 0.8);
-  text-shadow: 0px 1.0px 1.0px black;
-}
+
 .begin-design {
   width: 60%;
   margin-top: 30px;
@@ -118,21 +135,24 @@ fieldset p {
   color: white;
   border-radius: 10px;
 }
-#start-design {
-  border: 1px solid hsla(178, 83%, 55%, 0.8);
-  background-color: hsla(0, 0%, 0%, 0.5);
-  text-shadow: 0px 1.0px 1.0px black;
-}
+
 #submit {
   border: 1px solid hsla(50, 100%, 62%, 0.8);
   background-color: hsla(0, 0%, 0%, 0.0);
   text-shadow: 0px 1.0px 1.0px black;
 }
-
+#submit:hover {
+  background-color: hsla(50, 100%, 62%, 0.8);
+  text-shadow: 0px 1.0px 1.0px black;
+}
 #start-design:hover {
   background-color: hsla(178, 83%, 55%, 0.8);
   color: white;
   text-shadow: 0px 1.0px 1.0px black;
 }
-
+#start-design {
+  border: 1px solid hsla(178, 83%, 55%, 0.8);
+  background-color: hsla(0, 0%, 0%, 0.5);
+  text-shadow: 0px 1.0px 1.0px black;
+}
 
