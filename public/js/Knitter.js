@@ -33,13 +33,13 @@ $(function(){
     chest: 50, sleeve: 18, upperArm: 15.5, armHole: 9, waist: 42, hips: 53, backLength: 18}));
 
   $(function() {
-      $('.start-design').click(function(){
+      $('#start-design').click(function(){
         window.location.href='design.html';
       });
     });
 
   $(function() {
-    $('.start-design').hide();
+    $('#start-design').hide();
   });
 
   $("#nameSave").submit(function () {
@@ -70,28 +70,25 @@ $(function(){
     }
     knitterName = $('#knitter-name').val();
     currentUser = new Knitter (knitterName);
-    localStorage.setItem('user', JSON.stringify(currentUser)); // puts currentUser in localStorage with a key of 'user'
-    localStorage.setItem('sizes', JSON.stringify(sizes)); //puts sizes array into local storage with a key of 'sizes'
-    $('#submit').fadeOut();
-    $('.start-design').fadeIn();
-
-    console.log(typeof(visited));
-    console.log(visited);
+    localStorage.setItem('user', JSON.stringify(currentUser));
+    localStorage.setItem('sizes', JSON.stringify(sizes)); 
+    $('#submit').hide();
+    $('#start-design').fadeIn();
   });
 
   var visited = JSON.parse(localStorage.getItem('visited'));
   var secondTime = function() {
-    var $retrieveOldSweater = $('<p>Hello! It looks like you\'ve been here before.</p><p id="secondTime">Want to retrieve the sweater you made last time?</p>');
+    var $retrieveOldSweater = $('<p><span class="colorize">Hello! It looks like you\'ve been here before.</span></p><p id="secondTime">Want to retrieve the sweater you made last time?</p>');
     if (visited === true) {
       $('.enter-name').hide();
       var $newHomeSection = $('<section class="alternate-enter-name"></section>');
       $('.welcome').after($newHomeSection);
       $newHomeSection.append($retrieveOldSweater);
-      var $homePatternButton = $('<button id="to-pattern">Pattern ></button>');
+      var $homePatternButton = $('<button id="to-pattern">Yes, view pattern »</button>');
       $('p#secondTime').after($homePatternButton);
       var $startNewDesign = $('<p id="startNew">If you\'d like to make a new pattern clear your old pattern first.</p>');
       $('.alternate-enter-name').append($startNewDesign);
-      var $clearButton = $('<button id="clearPattern">Clear</button>');
+      var $clearButton = $('<button id="clearPattern">Clear old pattern</button>');
       $('p#startNew').after($clearButton);
     }
   }

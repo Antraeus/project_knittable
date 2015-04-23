@@ -1,11 +1,11 @@
 'use strict';
 $(function(){
-  $('#down').prop('disabled', true);
-  $('#set-in').prop('disabled', true);
-  $('#raglan').prop('disabled', true);
-  $('#vee').prop('disabled', true);
-  $('#yes-shape').prop('disabled', true);
-  $('#yes-hips').prop('disabled', true);
+  // $('#down').prop('disabled', true);
+  // $('#set-in').prop('disabled', true);
+  // $('#raglan').prop('disabled', true);
+  // $('#vee').prop('disabled', true);
+  // $('#yes-shape').prop('disabled', true);
+  // $('#yes-hips').prop('disabled', true);
 
   var $canvas1 = $('#canvas1')[0];
   var ctx1 = $canvas1.getContext('2d');

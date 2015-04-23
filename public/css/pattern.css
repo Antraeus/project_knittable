@@ -1,9 +1,12 @@
 .underline {
   color: hsla(99, 83%, 56%, 0.9);
 }
-#directions h1 {
+#directions h2 {
+  font-family: Courier, serif;
+  font-size: 350%;
   margin-bottom: .5em;
-  padding: 0;
+  padding-top: .2em;
+  /*padding: 0;*/
 }
 #directions {
   font-family: Helvetica;
