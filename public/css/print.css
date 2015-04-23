@@ -1,8 +1,24 @@
-#header, #nav, .noprint {
-  disply: none;
+* {
+  color: #000;
 }
-body, main {
+body, main, #directions{
   width: 100%;
   margin: 0;
   float: none;
+}
+#header, #nav, .noprint {
+  display: none;
+}
+h1 {
+  font-size: 150%;
+  color: #000;
+}
+h4 {
+  margin: .5em 0;
+}
+p {
+  margin: .3em 1em;
+}
+table {
+  border-color: #000;
 }
