@@ -42,6 +42,12 @@ $(function(){
     $('#start-design').hide();
   });
 
+  $(function() {
+    $("#knitter-name").focus(function(){
+      $("#knitter-name").val('');
+    })
+  })
+
   $("#nameSave").submit(function () {
     event.preventDefault();
     sizeIndex = 0;
