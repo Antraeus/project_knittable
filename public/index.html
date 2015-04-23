@@ -3,76 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <title>Project: Knittable</title>
-
 <!-- CSS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <link type="text/css" href="css/reset.css" rel="stylesheet"/>
 <link type="text/css" href="css/pure_forms.css" rel="stylesheet"/>
 <link type="text/css" href="css/app.css" rel="stylesheet"/>
 <link type="text/css" href="css/index.css" rel="stylesheet"/>
-
 <!-- JAVASCRIPT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script src="js/deps/jquery.js"></script>
 <script src="js/Knitter.js"></script>
-
-
+</head>
 <!-- CONTENT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-</head>
 <body>
   <header class="index-title">
     <section id="main-title">
       <h1>PROJECT: <span class="underline">Knittable</span></h1>
     </section>
-
-    <nav><a href="index.html"><button class="nav-buttons" id="nav-home">Home</button></a><a href="design.html"><button class="nav-buttons">Design</button></a><a href="pattern.html"><button class="nav-buttons">Pattern</button></a><a href="about.html"><button class="nav-buttons">About</button></a></nav>
+    <nav>
+      <a href="index.html"><button class="nav-buttons" id="nav-home">Home</button></a><a href="design.html"><button class="nav-buttons">Design</button></a><a href="pattern.html"><button class="nav-buttons">Pattern</button></a><a href="about.html"><button class="nav-buttons">About</button></a>
+    </nav>
   </header>
-
-  <main id="main1">
+  <main>
     <section class="welcome">
       <p id="retrieve">Take the hard work out of designing with <a href="about.html">Project: Knittable</a>!</p><p id="tell-us">Tell us your gauge, choose a size and the styles you want, and voila! A complete sweater pattern for you to knit as-is or use as a base for more complex projects.</p>
     </section>
-    <section class="enter-name">
+    <section id="enter-name">
       <form id="nameSave" class="pure-form pure-form-aligned">
-        <label id="label-enter-name" for="knitter-name">Enter your name:
-          <input name="username" id="knitter-name" type="text" size="15" placeholder="Knitty McYarn" value="Name">
-        </label>
-
-        <fieldset class="pure-control-group">
-        <p id="choose-size">Choose a Size:</p>
-        <label for="XS">X-Small
-          <input name="size" id="XS" type="radio">
-        </label>
-
-        <label for="S">Small
-          <input name="size" id="S" type="radio">
-        </label>
-
-        <label for="M">Medium
-          <input name="size" id="M" type="radio" checked>
-        </label>
-
-        <label for="L">Large
-          <input name="size" id="L" type="radio">
-        </label>
-
-        <label for="XL">X-Large
-          <input name="size" id="XL" type="radio">
-        </label>
-        <label for="XXL">2X
-          <input name="size" id="XXL" type="radio">
-        </label>
-        </fieldset>
+        <label id="label-enter-name" for="knitter-name">Enter your name:<input name="username" id="knitter-name" type="text" size="15" placeholder="Knitty McYarn" value="Name"></label>
+          <fieldset class="pure-control-group">
+            <p id="choose-size">Choose a Size:</p>
+              <label for="XS">X-Small<input name="size" id="XS" type="radio"></label>
+              <label for="S">Small<input name="size" id="S" type="radio"></label>
+              <label for="M">Medium<input name="size" id="M" type="radio" checked></label>
+              <label for="L">Large<input name="size" id="L" type="radio"></label>
+              <label for="XL">X-Large<input name="size" id="XL" type="radio"></label>
+              <label for="XXL">2X<input name="size" id="XXL" type="radio"></label>
+          </fieldset>
         <button type="submit" id="submit">Submit Now</button>
         <button id="start-design">Start Designing »</button>
       </form>
     </section>
-    <section class="begin-design">
-      <div>
-    </section>
-
 </body>
 </html>
 

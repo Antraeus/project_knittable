@@ -4,9 +4,6 @@ h2 {
   font-size: 250%;
   padding: .5em 0 .5em 0;
 }
-h3 {
-  /*clear: left;*/
-}
 p {
   line-height: 1.5em;
 }
@@ -33,8 +30,8 @@ main {
   padding: .5em;
   border: 1px solid #fff;
 }
-#molly {
-  border-color: #3a9d82;
+#authors {
+  width: 100%;
 }
 #molly h3, #phil h3 {
   margin-top: -50px;
@@ -49,8 +46,8 @@ p.image img {
 #aristide {
   border-color: #ab9858;
 }
-#authors {
-  width: 100%;
+#molly {
+  border-color: #3a9d82;
 }
 #future {
   clear: both;
