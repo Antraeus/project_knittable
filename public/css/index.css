@@ -31,7 +31,7 @@
 }
 
 #tell-us {
-  font-sive:1.2em;
+  font-size:1.0em;
   font-weight: 100;
 }
 
@@ -51,10 +51,13 @@
   background-color: hsla(0, 0%, 0%, 0.7);
   color: white;
 }
-
+#label-enter-name {
+  font-size: 1.2em;
+  font-weight: 200;
+}
 #choose-size {
   font-size: 1.2em;
-  font-weight: 150;
+  font-weight: 200;
 }
 
 label {
@@ -75,8 +78,18 @@ label {
   color: white;
 }
 .alternate-enter-name p {
+  font-size:1.0em;
+  font-weight: 100;
+  word-spacing: 0.02em;
   margin: 20px;
 }
+
+.colorize {
+  color: hsla(50, 100%, 62%, 1.0);
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+
 #to-pattern {
   text-shadow: 0px 1px 1px black;
   margin-top: 15px;
