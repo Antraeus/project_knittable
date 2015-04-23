@@ -1,8 +1,0 @@
-#header, #nav, .noprint {
-  disply: none;
-}
-body, main {
-  width: 100%;
-  margin: 0;
-  float: none;
-}
