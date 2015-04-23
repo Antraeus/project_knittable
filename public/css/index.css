@@ -14,22 +14,22 @@
   background-color: hsla(0, 0%, 0%, 0.0);
   color: white;
 }
-
 .welcome {
-
-  font-size: 140%;
+  font-size: 120%;
  /* width: 60%;*/
   margin-top: 1em;
   margin-bottom: 1em;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 30px;
-  padding-bottom:30px;
-  /*border: 1px solid black;
-  border-radius: 10px;*/
+  padding: 30px;
   background-color: hsla(0, 0%, 0%, 0.7);
   color: white;
+}
+.welcome p {
+  margin-bottom: 1em;
+  line-height: 1.2em;
+  font-weight: lighter;
 }
 
 .enter-name {
@@ -89,14 +89,14 @@ fieldset p {
   margin: 20px;
 }
 
-#submit {
+/*#submit {
   border: 1px solid hsla(50, 100%, 62%, 0.8);
   margin-top: 20px;
   background-color: hsla(0, 0%, 0%, 0.0);
   border-radius: 10px;
   color: white;
   text-shadow: 0px 1.5px 1.5px black;
-}
+}*/
 #submit:hover {
   background-color: hsla(50, 100%, 62%, 0.8);
   text-shadow: 0px 1.0px 1.0px black;
@@ -109,21 +109,27 @@ fieldset p {
   margin-bottom: 1em;
 }
 
-.start-design {
+#start-design, #submit {
   font-size: 140%;
   margin-left: auto;
   margin-right: auto;
-  height: 100px;
-  width: 200px;
+  /*height: 100px;*/
+  /*width: 200px;*/
   color: white;
-  border: 1px solid hsla(178, 83%, 55%, 0.8);
   border-radius: 10px;
+}
+#start-design {
+  border: 1px solid hsla(178, 83%, 55%, 0.8);
   background-color: hsla(0, 0%, 0%, 0.5);
   text-shadow: 0px 1.0px 1.0px black;
 }
+#submit {
+  border: 1px solid hsla(50, 100%, 62%, 0.8);
+  background-color: hsla(0, 0%, 0%, 0.0);
+  text-shadow: 0px 1.0px 1.0px black;
+}
 
-.start-design:hover {
-
+#start-design:hover {
   background-color: hsla(178, 83%, 55%, 0.8);
   color: white;
   text-shadow: 0px 1.0px 1.0px black;
