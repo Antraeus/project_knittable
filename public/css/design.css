@@ -9,6 +9,9 @@
   padding-bottom: 1em;
 }
 #design {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  word-spacing: .02em;
+  color: white;
   width: 52%;
   float: left;
   margin-left: 20px;
@@ -23,30 +26,43 @@
   padding: 10px;
   background-color: hsla(0, 0%, 0%, 0.7);
   margin-bottom: 15px;
-  font-size: 140%;
+  font-size: 1.3em;
+  font-weight: bolder;
+  color: hsla(178, 83%, 55%, 0.9);
 }
 .design-description{
   margin-top: 5px;
 }
 .reminder {
-  font-size: 115%;
+  font-size: 1.1em;
   text-shadow: 0px 1px 1px black;
+  margin-bottom: 0.83em;
 }
 .reminder span {
   color: hsla(178, 83%, 55%, 0.8);
   text-decoration: none;
 }
-fieldset p{
-  font-size: 110%;
-  margin-top: 12px;
-  margin-bottom: 12px;
+fieldset h4{
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-top: 0.1em;
+  margin-bottom: px;
+  /*margin-bottom: 50px;*/
+  margin-bottom: .83em;
+}
+hr {
+  margin-bottom: .83em;
+  border-color: hsla(0, 0%, 100%, 0.8);
 }
 #field1 {
   margin-bottom: 50px;
 }
 #field1 label {
-  margin-bottom: .83em;
+  margin-right: .2em;
+  font-weight: 100;
+  margin-bottom: 1.2em;
 }
+
 #render {
   float: left;
   position: fixed;
@@ -63,14 +79,14 @@ fieldset p{
   top: 0;
   left: 0;
 }
-#library {
+/*#library {
   margin-left: 20px;
   margin-top: 20px;
   clear: left;
-}
+}*/
 #first-step {
+  margin-top:;
   text-shadow: 0px 1px 1px black;
-  margin-left: 10px;
   border: 1px solid hsla(178, 83%, 55%, 0.8);
   border-radius: 10px;
   background-color: hsla(0, 0%, 0%, 0.0);
