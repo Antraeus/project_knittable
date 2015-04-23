@@ -60,7 +60,6 @@ $(function() {
     localStorage.setItem('rowsPerInch', JSON.stringify(rowsPerInch));
     localStorage.setItem('ease', JSON.stringify(ease));
     localStorage.setItem('needles', JSON.stringify(needles));
-
   };
   Sweater.prototype.noShapeTorso = function() {
     var rowsPerInch = patternLibrary[arrayIndex].rowsPerInch;
@@ -198,8 +197,5 @@ $(function() {
     localStorage.setItem('sweaterNumber', JSON.stringify(sweaterProject));
     var visited = true;
     localStorage.setItem('visited', JSON.stringify(visited));
-    console.log(visited);
-    console.log(typeof(visited));
   })
-  
 });

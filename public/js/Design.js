@@ -1,6 +1,6 @@
 $(function() {
   $('h4:not(#guage-legend)').hide();
-  $('label:not(#for-project-name, #for-row-guage, #for-needle-size, #for-stitch-guage)').hide();
+  $('label:not(#for-project-name, #for-row-guage, #for-needle-size, #for-stitch-guage, #working_direction)').hide();
   $('p:not(.design-instructions)').hide();
   $('hr:not(#first-break)').hide()
   $('#go-to-pattern').hide();
@@ -13,7 +13,7 @@ $(function() {
     $('#make').fadeIn(700);
     $('#second-break').fadeIn(700);
     $('.reminder').fadeIn(700);
-    $('.how').fadeIn(700);
+    $('#working-direction').fadeIn(700);
     $('#for-up, #for-down').fadeIn(700);
   });
 });

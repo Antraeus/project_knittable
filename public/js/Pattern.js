@@ -1,4 +1,3 @@
-
 'use strict';
 $(function() {
   var retUser = JSON.parse(localStorage.getItem('user'));
@@ -60,10 +59,12 @@ $(function() {
   var displayTorso = retSizes[sizeIndex].sideSeam;
   var displayArmhole = (retSizes[sizeIndex].armHole + 1);
   var displayFullLength = displayTorso + 6 + displayArmhole;
+  
   var elTitle = $('#sweater-name');
   elTitle.html('Sweater: ' + retCurrentSweater.sweaterName);
   var elSetup = $('#setup');
   elSetup.html('Your sweater will be size ' + displaySize + '. Your working gauge is ' + retStsPerInch + ' sts per inch and ' + retRowsPerInch + ' rows per inch on size ' + retNeedles + ' needles.');
+  
   $('.variable').each(function(i) {
     if ($(this).hasClass('retHemCO')) {
       $(this).html(retHemCO);
@@ -171,6 +172,7 @@ $(function() {
     $(this).html(displayFullLength + ' in.');
     }
   });
+
   $('#print-this').click(function() {
   window.print();
   return false

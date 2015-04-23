@@ -1,5 +1,7 @@
 'use strict';
 $(function(){
+/*********************************************************************/
+  // KEEP THESE and reactivate them after demo to prevent angry users
   // $('#down').prop('disabled', true);
   // $('#set-in').prop('disabled', true);
   // $('#raglan').prop('disabled', true);
@@ -208,7 +210,6 @@ $(function(){
   function clearCanvas4() {
     ctx4.clearRect(0,0,501,501);
   }
-
   drawYoke();
   drawCrew();
   drawNoShaping();
@@ -277,13 +278,12 @@ $(function(){
         drawYoke();
       }
   });
-
-
-  $("#nameSave").submit(function () { // listens for the form to submit
-    event.preventDefault(); //prevents page refresh
-    localStorage.clear(); //clears localStorage
-    var $userName = $('#knitter-name').val(); // sets entered name to $userName
-    localStorage.setItem('knitter', $userName); // puts $userName in localStorage with a key of 'knitter'
-    $('#knitter-name').val(''); // removed entered text from form input
-});
+  
+  $("#nameSave").submit(function () { 
+    event.preventDefault(); 
+    localStorage.clear(); 
+    var $userName = $('#knitter-name').val();
+    localStorage.setItem('knitter', $userName); 
+    $('#knitter-name').val(''); 
+  });
 });
