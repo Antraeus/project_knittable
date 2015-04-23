@@ -19,6 +19,7 @@ $(function(){
     this.backLength = options.backLength;
     this.sideSeam = this.backLength - this.armHole;
   }
+
   sizes.push(new Size('XS', {
     chest: 30, sleeve:16.5, upperArm:9.75, armHole:6.5, waist:24, hips:34, backLength: 16.5}));
   sizes.push(new Size('S', {
@@ -113,7 +114,6 @@ $(function(){
       $('#enter-name').show();
     });
   });
-
   secondTime();
 });
 
