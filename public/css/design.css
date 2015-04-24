@@ -3,7 +3,8 @@
 }
 .design-main {
   width: 70em;
-  font-family: Helvetica;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  min-height: 30em;
   color: white;
   overflow: auto;
   padding-bottom: 1em;
@@ -13,7 +14,7 @@
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   word-spacing: .02em;
   color: white;
-  width: 50%;
+  width: 36em;
   float: left;
   margin-left: 20px;
   margin-top: 40px;
@@ -24,10 +25,10 @@
   position: relative;
 }
 .design-instructions {
-  padding: 10px;
+  padding: 20px;
   background-color: hsla(0, 0%, 0%, 0.7);
   margin-bottom: 15px;
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-weight: bolder;
   color: hsla(178, 83%, 55%, 0.9);
 }
@@ -71,7 +72,7 @@ hr {
 #render {
   position: fixed;
   top: 251px;
-  right: 40px;
+  right: 92px;
   width: 501px;
   height: 361px;
   background-color: white;
