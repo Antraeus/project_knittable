@@ -15,9 +15,10 @@ header {
   background-color: hsla(0, 0%, 0%, 0.5);
 }
 footer {
+  font-size: 0.8em;
   text-align: center;
-  color: hsla(0, 0%, 100%, 0.8);
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; 
+  color: hsla(0, 0%, 100%, 0.7);
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   height: 2em;
 }
 h1 {
@@ -48,7 +49,7 @@ a:hover {
   color: hsla(14, 100%, 58%, 0.8);
 }
 nav {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 form {
   padding: 1.0em;
@@ -56,11 +57,22 @@ form {
 label.disabled {
   color: #393939;
 }
+input {
+  box-shadow: white;
+  margin-right: .3em;
+  margin-left: .4em;
+  background-color: hsla(0, 0%, 0%, 0.6);
+  color: white;
+}
+/*input:focus {
+  box-shadow: 0 0 1em gold;
+}*/
 button {
   padding: 1em;
   border: 0px solid black;
   background-color: white;
   color: black;
+  cursor: pointer;
 }
 button:disabled {
   background-color: white;
