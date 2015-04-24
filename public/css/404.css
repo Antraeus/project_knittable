@@ -1,0 +1,29 @@
+main {
+  min-height: 500px;
+}
+
+#stage-right {
+  position: absolute;
+  top: 225px;
+  left: 450px;
+}
+#stage-left {
+  position: absolute;
+  top: 225px;
+  left: 450px;
+}
+
+#paul {
+  position: absolute;
+  top: 265px;
+  left: 600px;
+}
+
+#carl {
+  position: absolute;
+  top: 265px;
+  left: 425px;
+}
+
+
+
