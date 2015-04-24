@@ -50,6 +50,9 @@ p {
 .bio-text p {
   margin-bottom: 1.5em;
 }
+p.bio-text {
+  margin-top: 1.5em;
+}
 #about-main h2 {
   font-size: 1.4em;
   font-weight: bolder;
