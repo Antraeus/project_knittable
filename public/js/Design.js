@@ -22,6 +22,9 @@ $(function() {
   $('#up').click(function() {
     $('.shoulder-construction').fadeIn(700);
     $('#for-yoke, #for-set, #for-raglan').fadeIn(700);
+    // KEEP THIS for future messing around
+    // var el = $('#render')[0];
+    // el.style.marginTop = "7em";
   });
   $('#down').click(function() {
     $('.shoulder-construction').fadeIn(700);
