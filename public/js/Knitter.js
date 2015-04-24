@@ -19,6 +19,7 @@ $(function(){
     this.backLength = options.backLength;
     this.sideSeam = this.backLength - this.armHole;
   }
+
   sizes.push(new Size('XS', {
     chest: 30, sleeve:16.5, upperArm:9.75, armHole:6.5, waist:24, hips:34, backLength: 16.5}));
   sizes.push(new Size('S', {
@@ -41,6 +42,12 @@ $(function(){
   $(function() {
     $('#start-design').hide();
   });
+
+  $(function() {
+    $("#knitter-name").focus(function(){
+      $("#knitter-name").val('');
+    })
+  })
 
   $("#nameSave").submit(function () {
     event.preventDefault();
@@ -80,14 +87,14 @@ $(function(){
   var secondTime = function() {
     var $retrieveOldSweater = $('<p><span class="colorize">Hello! It looks like you\'ve been here before.</span></p><p id="secondTime">Want to retrieve the sweater you made last time?</p>');
     if (visited === true) {
-      $('.enter-name').hide();
-      var $newHomeSection = $('<section class="alternate-enter-name"></section>');
+      $('#enter-name').hide();
+      var $newHomeSection = $('<section id="alternate-enter-name"></section>');
       $('.welcome').after($newHomeSection);
       $newHomeSection.append($retrieveOldSweater);
       var $homePatternButton = $('<button id="to-pattern">Yes, view pattern »</button>');
       $('p#secondTime').after($homePatternButton);
       var $startNewDesign = $('<p id="startNew">If you\'d like to make a new pattern clear your old pattern first.</p>');
-      $('.alternate-enter-name').append($startNewDesign);
+      $('#alternate-enter-name').append($startNewDesign);
       var $clearButton = $('<button id="clearPattern">Clear old pattern</button>');
       $('p#startNew').after($clearButton);
     }
@@ -102,11 +109,11 @@ $(function(){
   $(function() {
     $('#clearPattern').click(function() {
       localStorage.clear();
-      $('.alternate-enter-name').hide();
-      $('.enter-name').show();
+      console.log('i hear you');
+      $('#alternate-enter-name').hide();
+      $('#enter-name').show();
     });
   });
-
   secondTime();
 });
 

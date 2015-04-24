@@ -1,5 +1,3 @@
-/* WHOLE PAGE
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->*/
 html {
   background-color: hsla(0, 0%, 0%, 0.9);
 }
@@ -10,19 +8,17 @@ body {
   background: url(../images/earthtone.jpg) no-repeat fixed center;
   margin-left: auto;
   margin-right: auto;
-
 }
-
-/* Header
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->*/
 header {
-  /*padding: 5px;*/
   margin-bottom: 5px;
   background-color: hsla(0, 0%, 0%, 0.5);
 }
-
-/*** title __________________________*/
-
+footer {
+  text-align: center;
+  color: hsla(0, 0%, 100%, 0.8);
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; 
+  height: 2em;
+}
 h1 {
   padding-top: 10px;
   padding-right: 5px;
@@ -32,60 +28,6 @@ h1 {
   font-family: Courier New, serif;
   font-size: 4em;
 }
-#main-title {
-  background-color: hsla(0, 0%, 0%, 1);
-  height: 100px;
-}
-.underline {
-  font-weight: bolder;
-  text-decoration: underline;
-  color: hsla(50, 100%, 62%, 1.0);
-}
-/*** navbar __________________________*/
-
-nav {
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-  /*margin-top: 10px;*/
-  /*border:0px solid black;*/
-}
-
-.nav-buttons {
-  width: 25%;
-  height: 50px;
-  background-color: hsla(0, 0%, 0%, 0.2);
-  /*border-right: 1px solid hsla(0, 0%, 0%, 0.2);*/
-  font-size: 1.3em;
-  padding: 5px;
- /* margin-top: 5px;*/
-  color: white;
-  text-shadow: 0px 1.5px 1.5px black;
-}
-
-.nav-buttons:hover {
-  /*transform: translateY(-10%);*/
-  background-color: hsla(0, 0%, 100%, 0.3);
-  color: white;
-
-}
-#nav-design {
-  border: 2px solid hsla(178, 83%, 55%, 0.8);
-  /*background-color: hsla(0, 0%, 100%, 0.3);*/
-}
-#nav-home {
-  border: 2px solid hsla(50, 100%, 62%, 0.8);
-  /*background-color: hsla(0, 0%, 100%, 0.3);*/
-
-}
-#nav-pattern {
-  border: 2px solid hsla(99, 83%, 56%, 0.8);
-  /*background-color:hsla(96, 71%, 55%, 1.0);*/
-}
-#nav-about {
-  border: 2px solid hsla(14, 100%, 58%, 0.8);
-  /*background-color: hsla(96, 71%, 55%, 1.0);*/
-}
-
-
 h2 {
   font-size: 200%;
 }
@@ -104,26 +46,15 @@ a:visited {
 a:hover {
   color: hsla(14, 100%, 58%, 0.8);
 }
-
-/* Main
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->*/
-/*.colorize {
-  color: hsla(50, 100%, 62%, 1.0);
-  font-size: 110%;
-}*/
-
-/*** forms __________________________*/
-
-form {
-  padding: 1.5em;
+nav {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-
+form {
+  padding: 1.0em;
+}
 label.disabled {
   color: #393939;
 }
-
-/*** buttons __________________________*/
-
 button {
   padding: 1em;
   border: 0px solid black;
@@ -133,4 +64,38 @@ button {
 button:disabled {
   background-color: white;
   color: #393939;
+}
+.nav-buttons {
+  width: 25%;
+  height: 50px;
+  background-color: hsla(0, 0%, 0%, 0.2);
+  font-size: 1.3em;
+  padding: 5px;
+  color: white;
+  text-shadow: 0px 1.5px 1.5px black;
+}
+.nav-buttons:hover {
+  background-color: hsla(0, 0%, 100%, 0.3);
+  color: white;
+}
+.underline {
+  font-weight: bolder;
+  text-decoration: underline;
+  color: hsla(50, 100%, 62%, 1.0);
+}
+#nav-design {
+  border: 2px solid hsla(178, 83%, 55%, 0.8);
+}
+#nav-home {
+  border: 2px solid hsla(50, 100%, 62%, 0.8);
+}
+#nav-pattern {
+  border: 2px solid hsla(99, 83%, 56%, 0.8);
+}
+#nav-about {
+  border: 2px solid hsla(14, 100%, 58%, 0.8);
+}
+#main-title {
+  background-color: hsla(0, 0%, 0%, 1);
+  height: 100px;
 }

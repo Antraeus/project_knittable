@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Pattern</title>
-
 <!-- CSS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <link type="text/css" href="css/reset.css" rel="stylesheet"/>
@@ -11,86 +10,77 @@
 <link type="text/css" href="css/app.css" rel="stylesheet"/>
 <link type="text/css" href="css/pattern.css" rel="stylesheet"/>
 <link rel="stylesheet" type="text/css" href="css/print.css" media="print">
-
 <!-- JAVASCRIPT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script src="js/deps/jquery.js"></script>
-<script src="js/Knitter.js"></script>
-<script src="js/Sweater.js"></script>
 <script src="js/Pattern.js"></script>
-
-
+</head>
 <!-- CONTENT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-</head>
 <body>
   <header class="index-title noprint">
     <section id="main-title" class="noprint">
       <h1>PROJECT: <span class="underline">Knittable</span></h1>
     </section>
-
-    <nav class="noprint"><a href="index.html"><button class="nav-buttons">Home</button></a><a href="design.html"><button class="nav-buttons">Design</button></a><a href="pattern.html"><button class="nav-buttons" id="nav-pattern">Pattern</button></a><a href="about.html"><button class="nav-buttons">About</button></a></nav>
-
+    <nav class="noprint">
+      <a href="index.html"><button class="nav-buttons">Home</button></a><a href="design.html"><button class="nav-buttons">Design</button></a><a href="pattern.html"><button class="nav-buttons" id="nav-pattern">Pattern</button></a><a href="about.html"><button class="nav-buttons">About</button></a>
+    </nav>
   </header>
   <main>
     <section id="directions">
       <h2 id="sweater-name">Your Sweater Name</h2>
-      <!-- <img src="#" alt="custom sweater schematic" height="420" width="500"> -->
       <h3>Instructions</h3>
-      <p id="setup"></p>
-      <button class="noprint" id="print-this" type="button">Print This Pattern</button>
+        <p id="setup"></p>
+        <button class="noprint" id="print-this" type="button">Print This Pattern</button>
       <h4>Body</h4>
-      <p>CO <span class="variable retHemCO">retHemCO</span> sts and join in the round. Work even for <span class="variable retTorsoR">retTorsoR</span> rows (<span class="variable retTorsoIn">retTorsoIn</span> inches) to complete the body of the sweater. Place all sts on a st holder.</p>
+        <p>CO <span class="variable retHemCO">retHemCO</span> sts and join in the round. Work even for <span class="variable retTorsoR">retTorsoR</span> rows (<span class="variable retTorsoIn">retTorsoIn</span> inches) to complete the body of the sweater. Place all sts on a st holder.</p>
       <h4>Sleeves (2)</h4>
-      <p>Cast on <span class="variable retCuffCO">retCuffCO</span> sts and join in the round.  Work in 1x1 ribbing for 1.5 inches. In next round, begin increasing:</p>
-      <p><sup>*</sup>Increase Round: K1, m1, k to last 2 sts, m1, k1.</p>
-      <p>Work <span class="variable retIncInt">retIncInt</span> rows. Repeat from <sup>*</sup> until you have worked the increase round a total of <span class="variable retIncInt">retIncInt</span> times. Work without increasing until sleeve measures <span class="variable retSizesSleeve">retSizes[sizeIndex].sleeve</span> inches from cast-on edge. Place last <span class="variable retSlvGusset">retSlvGusset</span> sts from the final round onto a st holder. These will form the underarm gusset.</p>
+        <p>Cast on <span class="variable retCuffCO">retCuffCO</span> sts and join in the round.  Work in 1x1 ribbing for 1.5 inches. In next round, begin increasing:</p>
+        <p><sup>*</sup>Increase Round: K1, m1, k to last 2 sts, m1, k1.</p>
+        <p>Work <span class="variable retIncInt">retIncInt</span> rows. Repeat from <sup>*</sup> until you have worked the increase round a total of <span class="variable retIncInt">retIncInt</span> times. Work without increasing until sleeve measures <span class="variable retSizesSleeve">retSizes[sizeIndex].sleeve</span> inches from cast-on edge. Place last <span class="variable retSlvGusset">retSlvGusset</span> sts from the final round onto a st holder. These will form the underarm gusset.</p>
       <h4>Yoke</h4>
-      <p>To begin, place <span class="variable retSlvGusset">retSlvGusset</span> sts from the body onto a holder.  Work across <span class="variable retBackSts">retBackSts</span> sts for the back of the body, <span class="variable retSlvSts">retSlvSts</span> sts from sleeve #1, <span class="variable retFrontSts">retFrontSts</span> sts for the front of the body, place next <span class="variable retSlvGusset">retSlvGusset</span> sts from the body onto a holder, and work <span class="variable retSlvSts">retSlvSts</span> sts from sleeve #2.  You should have <span class="variable retLiveSts">retLiveSts</span> live sts, with <span class="variable retHeldSts">retHeldSts</span> sts reserved on st holders at the underams. Work <span class="variable retStartYoke">retStartYoke</span> rows even. Begin decreasing as follows:</p>
-      <ol>
-        <li>Dec <span class="variable retDec1">retDec1</span> sts evenly around (<span class="variable retAfterDec1">retAfterDec1</span> sts). Work <span class="variable retDecInt1">retDecInt1</span> rounds even.</li>
-        <li>Dec <span class="variable retDec2">retDec2</span> sts evenly around (<span class="variable retAfterDec2">retAfterDec2</span> sts). Work <span class="variable retDecInt2">retDecInt2</span> rounds even.</li>
-        <li>Dec <span class="variable retDec3">retDec3</span> sts evenly around (<span class="variable retAfterDec3">retAfterDec3</span> sts). Work <span class="variable retDecInt3">retDecInt3</span> rounds even.</li>
-        <li>Dec <span class="variable retDec4">retDec4</span> sts evenly around (<span class="variable retAfterDec4">retAfterDec4</span> sts). Work <span class="variable retDecInt4">retDecInt4</span> rounds even.</li>
-        <li>Dec <span class="variable retDec5">retDec5</span> sts evenly around (<span class="variable retAfterDec5">retAfterDec5</span> sts). Work 1 round even.</li>
-      </ol>
+        <p>To begin, place <span class="variable retSlvGusset">retSlvGusset</span> sts from the body onto a holder.  Work across <span class="variable retBackSts">retBackSts</span> sts for the back of the body, <span class="variable retSlvSts">retSlvSts</span> sts from sleeve #1, <span class="variable retFrontSts">retFrontSts</span> sts for the front of the body, place next <span class="variable retSlvGusset">retSlvGusset</span> sts from the body onto a holder, and work <span class="variable retSlvSts">retSlvSts</span> sts from sleeve #2.  You should have <span class="variable retLiveSts">retLiveSts</span> live sts, with <span class="variable retHeldSts">retHeldSts</span> sts reserved on st holders at the underams. Work <span class="variable retStartYoke">retStartYoke</span> rows even. Begin decreasing as follows:</p>
+          <ol>
+            <li>Dec <span class="variable retDec1">retDec1</span> sts evenly around (<span class="variable retAfterDec1">retAfterDec1</span> sts). Work <span class="variable retDecInt1">retDecInt1</span> rounds even.</li>
+            <li>Dec <span class="variable retDec2">retDec2</span> sts evenly around (<span class="variable retAfterDec2">retAfterDec2</span> sts). Work <span class="variable retDecInt2">retDecInt2</span> rounds even.</li>
+            <li>Dec <span class="variable retDec3">retDec3</span> sts evenly around (<span class="variable retAfterDec3">retAfterDec3</span> sts). Work <span class="variable retDecInt3">retDecInt3</span> rounds even.</li>
+            <li>Dec <span class="variable retDec4">retDec4</span> sts evenly around (<span class="variable retAfterDec4">retAfterDec4</span> sts). Work <span class="variable retDecInt4">retDecInt4</span> rounds even.</li>
+            <li>Dec <span class="variable retDec5">retDec5</span> sts evenly around (<span class="variable retAfterDec5">retAfterDec5</span> sts). Work 1 round even.</li>
+          </ol>
       <h4>Collar:</h4>
-      <p>Work even in 1x1 rib for 1.5 inches. Bind off in pattern.</p>
+        <p>Work even in 1x1 rib for 1.5 inches. Bind off in pattern.</p>
       <h4>Underarm Gussets (2)</h4>
-      <p>Remove held sts at underarm from holder and graft together.</p>
+        <p>Remove held sts at underarm from holder and graft together.</p>
       <h4>Finishing</h4>
-      <p>Weave in ends, wet block to finished dimensions:</p>
-    <table>
-      <tr>
-        <th>Size:</th>
-        <td><span class="variable displaySize">displaySize</span></td>
-      </tr>
-      <tr>
-        <th>Sleeve length to underarm:</th>
-        <td><span class="variable displaySleeve">displaySleeve</span></td>
-      </tr>
-      <tr>
-        <th>Armhole depth:</th>
-        <td><span class="variable displayArmhole">displayArmhole</span></td>
-      </tr>
-      <tr>
-        <th>Body width at underarm:</th>
-        <td><span class="variable displayWidth">displayWidth</span></td>
-      </tr>
-      <tr>
-        <th>Body length from underam:</th>
-        <td><span class="variable displayTorso">displayTorso</span></td>
-      </tr>
-      <tr>
-        <th>Hem to back-of-collar:</th>
-        <td><span class="variable displayFullLength">displayFullLength</span></td>
-      </tr>
-    </table>
+        <p>Weave in ends, wet block to finished dimensions:</p>
+      <table>
+        <tr>
+          <th>Size:</th>
+          <td><span class="variable displaySize">displaySize</span></td>
+        </tr>
+        <tr>
+          <th>Sleeve length to underarm:</th>
+          <td><span class="variable displaySleeve">displaySleeve</span></td>
+        </tr>
+        <tr>
+          <th>Armhole depth:</th>
+          <td><span class="variable displayArmhole">displayArmhole</span></td>
+        </tr>
+        <tr>
+          <th>Body width at underarm:</th>
+          <td><span class="variable displayWidth">displayWidth</span></td>
+        </tr>
+        <tr>
+          <th>Body length from underam:</th>
+          <td><span class="variable displayTorso">displayTorso</span></td>
+        </tr>
+        <tr>
+          <th>Hem to back-of-collar:</th>
+          <td><span class="variable displayFullLength">displayFullLength</span></td>
+        </tr>
+      </table>
     </section>
   </main>
+  <footer>Copyright 2015 &copy; All Rights Reserved</footer>
 </body>
 </html>
-
-
-
