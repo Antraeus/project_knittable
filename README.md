@@ -1,7 +1,7 @@
 # Team name: Project Knittable
 
 ### Team Members: Philip Hirt, Molly Kent, Aristide Tosi
-![Alt text](public/css/molly.png) ![Alt text](public/css/aristide.png) ![Alt text](public/css/phil.png)
+![Alt text](public/images/molly.png) ![Alt text](public/images/aristide.png) ![Alt text](public/images/phil.png)
 
 ===
 
