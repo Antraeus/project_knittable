@@ -25,5 +25,27 @@ main {
   left: 425px;
 }
 
+#carl-bubble {
+  position: absolute;
+  top:345px;
+  left:290px;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  border-radius: 25px;
+}
+#paul-bubble {
+  position: absolute;
+  top:345px;
+  left:850px;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  border-radius: 25px;
+}
+
+hr.style {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
+    top:348px;
+    left:850px;
+}
 
 
