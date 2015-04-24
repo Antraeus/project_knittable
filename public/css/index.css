@@ -36,11 +36,6 @@ fieldset p {
   margin-bottom: .5em;
   color: hsla(50, 100%, 62%, 1.0);
 }
-.colorize {
-  color: hsla(50, 100%, 62%, 1.0);
-  font-weight: bolder;
-  font-size: 1.2em;
-}
 #enter-name {
   padding: 10px 20px 20px 20px;
   margin-left: auto;

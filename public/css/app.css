@@ -96,6 +96,11 @@ button:disabled {
   text-decoration: underline;
   color: hsla(50, 100%, 62%, 1.0);
 }
+.colorize {
+  color: hsla(50, 100%, 62%, 1.0);
+  font-weight: bolder;
+  font-size: 1.2em;
+}
 #nav-design {
   border: 2px solid hsla(178, 83%, 55%, 0.8);
 }

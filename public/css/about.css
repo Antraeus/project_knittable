@@ -12,6 +12,47 @@ p {
   word-spacing: 0.03em;
   letter-spacing: 0.02em;
 }
+.project-description p {
+  font-weight: 100;
+}
+.bold-this {
+  font-weight: bolder;
+}
+.normal-size {
+  font-weight: normal;
+}
+.underline {
+  color: hsla(14, 100%, 58%, 0.9);
+}
+.team-member {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-right: auto;
+  margin-bottom: 2em;
+  margin-left: auto;
+  padding-top: 1.5em;
+  padding-bottom: 2em;
+  color: white;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  width: 20em;
+  padding: .5em;
+}
+.circle-image {
+  margin-top: 1em;
+  margin-left: 8.5em;
+  margin-right: auto;
+}
+.bio-text {
+  font-size: 1em;
+  text-align: left;
+  font-weight: 100;
+  letter-spacing: 0.02em;
+}
+.bio-text p {
+  margin-bottom: 1.5em;
+}
+p.bio-text {
+  margin-top: 1.5em;
+}
 #about-main h2 {
   font-size: 1.4em;
   font-weight: bolder;
@@ -31,6 +72,9 @@ p {
   margin-left: 1em;
   font-weight: bolder;
 }
+#future {
+  margin-top: 1.2em;
+}
 #molly h3, #phil h3, #aristide h3 {
   font-size: 1.2em;
   font-weight: bolder;
@@ -48,15 +92,6 @@ p {
   padding: 1.5em;
   color: white;
   max-width: 85%;
-}
-#authors {
-
-}
-#project-description {
-  font-weight: 100;
-}
-#bold-this {
-  font-weight: bolder;
 }
 #molly {
   position: absolute;
@@ -133,35 +168,6 @@ p {
 }
 #hide-aristide:hover {
   background-color: hsla(46, 33%, 51%, 0.8);
-}
-.normal-size {
-  font-weight: regular;
-}
-.underline {
-  color: hsla(14, 100%, 58%, 0.9);
-}
-.team-member {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-right: auto;
-  margin-bottom: 2em;
-  margin-left: auto;
-  padding-top: 1.5em;
-  padding-bottom: 2em;
-  color: white;
-  background-color: hsla(0, 0%, 0%, 0.7);
-  width: 20em;
-  padding: .5em;
-}
-.circle-image {
-  margin-top: 1em;
-  margin-left: 8.5em;
-  margin-right: auto;
-}
-.bio-text {
-  font-size: 1em;
-  text-align: left;
-  font-weight: 100;
-  letter-spacing: 0.02em;
 }
 
 
