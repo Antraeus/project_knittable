@@ -1,55 +1,172 @@
+body {
+  min-height: 63em;
+}
+footer {
+  margin-top: 50em;
+}
 h2 {
-  color: white;
-  font-family: Courier, serif;
-  font-size: 250%;
-  padding: .5em 0 .5em 0;
+  word-spacing: 0.02em
 }
 p {
   line-height: 1.5em;
+  word-spacing: 0.03em;
+  letter-spacing: 0.02em;
 }
-ul {
-  margin: 1em 0 1em 3em;
-  padding-bottom: 2em;
-  line-height: 2em;
+.project-description p {
+  font-weight: 100;
 }
-main {
-  font-family: Helvetica;
-  background-color: hsla(0, 0%, 0%, 0.7);
-  margin: 2.5em auto;
-  padding-left: 1.5em;
-  color: white;
-  width: 90%;
+.bold-this {
+  font-weight: bolder;
+}
+.normal-size {
+  font-weight: normal;
 }
 .underline {
   color: hsla(14, 100%, 58%, 0.9);
 }
 .team-member {
-  float: left;
-  width: 30%;
-  margin: 1em .5em 2em 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-right: auto;
+  margin-bottom: 2em;
+  margin-left: auto;
+  padding-top: 1.5em;
+  padding-bottom: 2em;
+  color: white;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  width: 20em;
   padding: .5em;
-  border: 1px solid #fff;
 }
-#authors {
-  width: 100%;
+.circle-image {
+  margin-top: 1em;
+  margin-left: 8.5em;
+  margin-right: auto;
 }
-#molly h3, #phil h3 {
-  margin-top: -50px;
-  margin-bottom: 10px;
+.bio-text {
+  font-size: 1em;
+  text-align: left;
+  font-weight: 100;
+  letter-spacing: 0.02em;
 }
-p.image img {
-  margin-top: 0;
+.bio-text p {
+  margin-bottom: 1.5em;
 }
-#phil {
-  border-color: #d27941;
+#about-main h2 {
+  font-size: 1.4em;
+  font-weight: bolder;
+  margin-bottom: 1em;
+  color: hsla(14, 100%, 58%, 0.9);
 }
-#aristide {
-  border-color: #ab9858;
+#about-main h3 {
+  font-size: 1.2em;
+  margin-bottom: 1em;
 }
-#molly {
-  border-color: #3a9d82;
+#about-main p {
+  line-height: 2em;
+}
+#authors h2 {
+  color: white;
+  font-size: 1.3em;
+  margin-left: 1em;
+  font-weight: bolder;
 }
 #future {
-  clear: both;
+  margin-top: 1.2em;
 }
+#molly h3, #phil h3, #aristide h3 {
+  font-size: 1.2em;
+  font-weight: bolder;
+  margin-top: -50px;
+  margin-bottom: 0.5em;
+}
+#about-main {
+  text-align: justify;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1.5em;
+  color: white;
+  max-width: 85%;
+}
+#molly {
+  position: absolute;
+  margin-top: 0.5em;
+  margin-left: 4.2em;
+  border: 1px solid #3a9d82;
+  background-color: hsla(0, 0%, 0%, 0.7);
+}
+#molly-picture {
+  cursor: pointer;
+}
+#molly-bio {
+  border-top: 1px solid #3a9d82;
+  padding: .1em;
+}
+#hide-molly {
+  margin-top: 1em;
+  margin-left: 22em;
+  text-shadow: 0px 1px 1px black;
+  border: 1px solid #3a9d82;
+  border-radius: 10px;
+  background-color: hsla(0, 0%, 0%, 0.0);
+  color: white;
+}
+#hide-molly:hover{
+  background-color: hsla(164, 46%, 42%, 0.8);
+}
+#phil-picture {
+  cursor: pointer;
+}
+#phil {
+  position: absolute;
+  margin-top: 0.5em;
+  margin-left: 26.9em;
+  border: 1px solid #d27941;
+  background-color: hsla(0, 0%, 0%, 0.7);
+}
+#phil-bio {
+  border-top: 1px solid #d27941;
+}
+#hide-phil {
+  margin-top: 1em;
+  margin-left: 22em;
+  text-shadow: 0px 1px 1px black;
+  border: 1px solid #d27941;
+  border-radius: 10px;
+  background-color: hsla(0, 0%, 0%, 0.0);
+  color: white;
+}
+#hide-phil:hover {
+  background-color: hsla(23, 62%, 54%, 0.8);
+}
+#aristide-picture {
+  cursor: pointer;
+}
+#aristide {
+  position: absolute;
+  margin-top: 0.5em;
+  margin-left: 49.75em;
+  border: 1px solid #ab9858;
+  background-color: hsla(0, 0%, 0%, 0.7);
+}
+#aristide-bio {
+  border-top: 1px solid #ab9858;
+}
+#hide-aristide {
+  margin-top: 1em;
+  margin-left: 22em;
+  text-shadow: 0px 1px 1px black;
+  border: 1px solid #ab9858;
+  border-radius: 10px;
+  background-color: hsla(0, 0%, 0%, 0.0);
+  color: white;
+}
+#hide-aristide:hover {
+  background-color: hsla(46, 33%, 51%, 0.8);
+}
+
+
+
 
