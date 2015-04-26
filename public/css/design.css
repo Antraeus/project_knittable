@@ -1,19 +1,14 @@
-.underline {
-  color: hsla(178, 83%, 55%, 0.9);
-}
 .design-main {
   width: 70em;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   min-height: 30em;
-  color: white;
+  color: #fff;
   overflow: auto;
   padding-bottom: 1em;
   position: relative;
 }
 #design {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   word-spacing: .02em;
-  color: white;
+  color: #fff;
   width: 36em;
   float: left;
   margin-left: 20px;
@@ -51,10 +46,6 @@ fieldset h4{
   margin-top: 0.1em;
   margin-bottom: .83em;
 }
-hr {
-  margin-bottom: .83em;
-  border-color: hsla(0, 0%, 100%, 0.8);
-}
 #field1 {
   margin-bottom: 50px;
 }
@@ -69,31 +60,18 @@ hr {
 #field1 p {
   margin-bottom: 1em;
 }
-#render {
-  position: fixed;
-  top: 251px;
-  right: 92px;
-  width: 501px;
-  height: 361px;
-  background-color: white;
-  border-radius: 10px;
-}
-#canvas1, #canvas2, #canvas3, #canvas4 {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+
 #first-step {
   margin-top:;
   text-shadow: 0px 1px 1px black;
   border: 1px solid hsla(178, 83%, 55%, 0.8);
   border-radius: 10px;
   background-color: hsla(0, 0%, 0%, 0.0);
-  color: white;
+  color: #fff;
 }
 #first-step:hover {
   text-shadow: 0px 1px 1px black;
-  color: white;
+  color: #fff;
   background-color: hsla(178, 83%, 55%, 0.8);
 }
 #save-design {
@@ -105,11 +83,11 @@ hr {
   border: 1px solid hsla(178, 83%, 55%, 0.8);
   border-radius: 10px;
   background-color: hsla(0, 0%, 0%, 0.0);
-  color: white;
+  color: #fff;
 }
 #save-design:hover {
   text-shadow: 0px 1px 1px black;
-  color: white;
+  color: #fff;
   background-color: hsla(178, 83%, 55%, 0.8);
 }
 #go-to-pattern {
@@ -121,7 +99,7 @@ hr {
   border: 1px solid hsla(99, 83%, 56%, 0.9);
   border-radius: 10px;
   background-color: hsla(0, 0%, 0%, 0.0);
-  color: white;
+  color: #fff;
 }
 #go-to-pattern:hover {
   background-color: hsla(99, 83%, 56%, 0.9);
