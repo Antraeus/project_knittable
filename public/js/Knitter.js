@@ -91,7 +91,7 @@ $(function(){
       var $newHomeSection = $('<section id="alternate-enter-name"></section>');
       $('.welcome').after($newHomeSection);
       $newHomeSection.append($retrieveOldSweater);
-      var $homePatternButton = $('<button id="to-pattern">Yes, view pattern »</button>');
+      var $homePatternButton = $('<button id="to-previous-pattern">Yes, view pattern »</button>');
       $('p#secondTime').after($homePatternButton);
       var $startNewDesign = $('<p id="startNew">If you\'d like to make a new pattern clear your old pattern first.</p>');
       $('#alternate-enter-name').append($startNewDesign);
@@ -101,7 +101,7 @@ $(function(){
   }
 
    $(function() {
-    $('#to-pattern').click(function() {
+    $('#to-previous-pattern').click(function() {
       window.location.href='pattern.html';
     });
   });

@@ -17,7 +17,7 @@
 <link type="text/css" href="css/reset.css" rel="stylesheet"/>
 <link type="text/css" href="css/pure_forms.css" rel="stylesheet"/>
 <link type="text/css" href="css/app.css" rel="stylesheet"/>
-<link type="text/css" href="css/design.css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="css/print.css" media="print">
 <link rel="shortcut icon" href="images/PKlogo.ico" />
 
 <!-- CONTENT
@@ -25,61 +25,63 @@
 
 </head>
 <body>
-  <header class="index-title">
-    <section id="main-title">
-      <h1>PROJECT: <span class="underline">Knittable</span></h1>
+  <header>
+    <section>
+      <h1>KnitWare</h1>
     </section>
     <nav>
-      <a href="index.html"><button class="nav-buttons" >Home</button></a><a href="design.html"><button class="nav-buttons" id="nav-design">Design</button></a><a href="pattern.html"><button class="nav-buttons">Pattern</button></a><a href="about.html"><button class="nav-buttons">About</button></a>
+      <a href="index.html"><button>Home</button></a><a href="design.html"><button id="nav-design">Design</button></a><a href="pattern.html"><button>Pattern</button></a><a href="about.html"><button>About</button></a><!-- NOT CALLED; styles button border -->
     </nav>
   </header>
-  <main class="design-main">
-    <section id="design">
+  <main>
+    <section>
       <p class="design-instructions">Design your custom sweater.</p>
-      <form class="pure-form pure-form-aligned" id="save-new-design">
-        <fieldset id="field1" class="pure-control-group">
-          <h4 id="guage-legend">Get Started</h4>
-          <hr id="first-break"/>
-          <label id="for-project-name" for="project-name">Sweater Name <input type="text" name="project-name" id="project-name" placeholder="Best Sweater Ever"></label>
-          <br />
-          <label id="for-needle-size" for="needle-size">Needle Size <input type="text" name="needle-size" placeholder="0.0" id="needle-size" size="6"></label>
-          <br />
-          <label id="for-stitch-guage" for="stitch-gauge">Stitch-Gauge (over 4 inches) <input type="text" name="stitch-gauge" placeholder="0.0" id="stitch-gauge" size="6"></label>
-          <label id="for-row-guage" for="row-gauge">Row-Gauge (over 4 inches) <input type="text" name="row-gauge" placeholder="0.0" id="row-gauge" size="6"></label>
-          <br />
-          <button id="first-step">Choose Styles »</button>
-          <h4 id="make">Design Your Sweater</h4>
-          <hr id="second-break"/>
-          <p class="reminder"><span>Please Note:</span> this design tool assumes you are working in the round.</p>
-          <p id="working-direction">How will you knit your sweater?</p>
-          <label id="for-up" for="up"><input type="radio" name="direction" id="up">Bottom-Up</label>
-          <label id="for-down" for="down"><input type="radio" name="direction" id="down">Top-down</label>
+      <form class="pure-form pure-form-aligned" id="save-new-design"><!-- #save-new-design CALLED IN SWEATER -->
+        <fieldset class="pure-control-group">
+          <h4 class="show-on-arrival">Get Started</h4>
+          <hr class="show-on-arrival"/>
+          <label class="show-on-arrival" for="project-name">Sweater Name <input type="text" name="project-name" id="project-name" class="show-on-arrival" placeholder="Best Sweater Ever"></label><!-- #project-name CALLED IN SWEATER -->
+          <label class="show-on-arrival" for="needle-size">Needle Size <input type="text" name="needle-size" placeholder="0.0" id="needle-size" class="show-on-arrival" size="6"></label><!-- #needle-size CALLED IN SWEATER -->
+          <label class="show-on-arrival" for="stitch-gauge">Stitch-Gauge (over 4 inches) <input type="text" name="stitch-gauge" placeholder="0.0" id="stitch-gauge" class="show-on-arrival" size="6"></label><!-- #stitch-gauge CALLED IN SWEATER -->
+          <label class="show-on-arrival" for="row-gauge">Row-Gauge (over 4 inches) <input type="text" name="row-gauge" placeholder="0.0" id="row-gauge" class="show-on-arrival" size="6"></label><!-- #row-gauge CALLED IN SWEATER -->
+          <button class="show-on-arrival" id="first-step">Choose Styles »</button>
+          <!-- #first-step CALLED IN DESIGN -->
+          <h4 class="choices">Design Your Sweater</h4><!-- CALLED IN DESIGN -->
+          <hr class="choices"/>
+          <p class="choices"><span>Please Note:</span> this design tool assumes you are working in the round.</p>
+          <p class="choices">How will you knit your sweater?</p>
+          <label class="choices" for="up"><input type="radio" name="direction" id="up" class="choices">Bottom-Up</label>
+          <label class="choices" for="down"><input type="radio" name="direction" id="down" class="choices">Top-down</label>
           <p class="shoulder-construction">What sleeve/shoulder style will you use?</p>
-          <label id="for-yoke" for="yoke"><input type="radio" name="shoulder-style" value="yoke" id="yoke">Yoke</label>
-          <label id="for-set" for="set-in"><input type="radio" name="shoulder-style" value="set-in" id="set-in">Set-In</label>
-          <label id="for-raglan" for="raglan"><input type="radio" name="shoulder-style" value="raglan" id="raglan">Raglan</label>
+          <label class="shoulder-construction" for="yoke"><input type="radio" name="shoulder-style" value="yoke" id="yoke">Yoke</label>
+          <label class="shoulder-construction" for="set-in"><input type="radio" name="shoulder-style" value="set-in" id="set-in">Set-In</label>
+          <label class="shoulder-construction" for="raglan"><input type="radio" name="shoulder-style" value="raglan" id="raglan">Raglan</label>
           <p class="collar">What neckline will you use?</p>
-          <label id="for-crew" for="crew"><input type="radio" name="neck-style" id="crew">Crew</label>
-          <label id="for-vee" for="vee"><input type="radio" name="neck-style" id="vee">Vee</label>
+          <label class="collar" for="crew"><input type="radio" name="neck-style" id="crew">Crew</label>
+          <label class="collar" for="vee"><input type="radio" name="neck-style" id="vee">Vee</label>
           <p class="waist-shape">Will you have shaping in the torso of your sweater?</p>
-          <label id="for-yes-shape" for="yes-shape"><input type="radio" name="shaping" id="yes-shape">Yes</label>
-          <label id="for-no-shape" for="no-shape"><input type="radio" name="shaping" id="no-shape">No</label>
+          <label class="waist-shape" for="yes-shape"><input type="radio" name="shaping" id="yes-shape">Yes</label>
+          <label class="waist-shape" for="no-shape"><input type="radio" name="shaping" id="no-shape">No</label>
           <p class="torso-length">How long will your sweater be?</p>
-          <label id="for-yes-hips" for="yes-hips"><input type="radio" name="length" id="yes-hips">Extra-long</label>
-          <label id="for-no-hips" for="no-hips"><input type="radio" name="length" id="no-hips">Standard length</label>
+          <label class="torso-length" for="yes-hips"><input type="radio" name="length" id="yes-hips">Extra-long</label>
+          <label class="torso-length" for="no-hips"><input type="radio" name="length" id="no-hips">Standard length</label>
           <p class="fit">How much ease do you want?</p>
-          <label id="for-close" for="close"><input type="radio" name="ease" id="close">Close-fitting (2 in)</label>
-          <label id="for-loose" for="loose"><input type="radio" name="ease" id="loose">Loose-fitting (4 in)</label>
+          <label class="fit" for="close"><input type="radio" name="ease" id="close">Close-fitting (2 in)</label>
+          <label class="fit" for="loose"><input type="radio" name="ease" id="loose">Loose-fitting (4 in)</label>
         </fieldset>
-        <button id="save-design" type="submit">Save this Design</button>
-        <button id="go-to-pattern">Go to Pattern »</button>
+        <button id="save-design" type="submit">Save this Design</button><!-- #save-design CALLED IN DESIGN -->
+        <button id="go-to-pattern">Go to Pattern »</button><!-- #go-to-pattern CALLED IN DESIGN -->
       </form>
     </section>
-    <section id="render">
+    <section id="render"><!-- NOT CALLED; styles canvas wrapper -->
       <canvas id="canvas1" width="501" height="341">Sweater schematic</canvas>
+      <!-- #canvas1 CALLED IN APP -->
       <canvas id="canvas2" width="501" height="341">Sweater schematic</canvas>
+      <!-- #canvas2 CALLED IN APP -->
       <canvas id="canvas3" width="501" height="341">Sweater schematic</canvas>
+      <!-- #canvas3 CALLED IN APP -->
       <canvas id="canvas4" width="501" height="341">Sweater schematic</canvas>
+      <!-- #canvas4 CALLED IN APP -->
     </section>
   </main>
   <footer>Copyright 2015 &copy; All Rights Reserved</footer>

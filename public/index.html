@@ -8,7 +8,7 @@
 <link type="text/css" href="css/reset.css" rel="stylesheet"/>
 <link type="text/css" href="css/pure_forms.css" rel="stylesheet"/>
 <link type="text/css" href="css/app.css" rel="stylesheet"/>
-<link type="text/css" href="css/index.css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="css/print.css" media="print">
 <link rel="shortcut icon" href="images/PKlogo.ico" />
 <!-- JAVASCRIPT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -19,31 +19,33 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <body>
   <header class="index-title">
-    <section id="main-title">
-      <h1>PROJECT: <span class="underline">Knittable</span></h1>
+    <section><!-- NOT CALLED -->
+      <h1>KnitWare</h1>
     </section>
     <nav>
-      <a href="index.html"><button class="nav-buttons" id="nav-home">Home</button></a><a href="design.html"><button class="nav-buttons">Design</button></a><a href="pattern.html"><button class="nav-buttons">Pattern</button></a><a href="about.html"><button class="nav-buttons">About</button></a>
+      <a href="index.html"><button id="nav-home">Home</button></a><a href="design.html"><button>Design</button></a><a href="pattern.html"><button>Pattern</button></a><a href="about.html"><button>About</button></a><!-- NOT CALLED; styles button border -->
     </nav>
   </header>
   <main>
     <section class="welcome">
-      <p id="retrieve">Take the hard work out of designing with <a href="about.html">Project: Knittable</a>!</p><p id="tell-us">Tell us your gauge, choose a size and the styles you want, and voila! <br />A complete sweater pattern is made for you to knit as-is or use as a base for more complex projects.</p>
+      <p>Take the hard work out of designing with <a href="about.html">KnitWare</a>!</p>
+      <p>Tell us your gauge, choose a size and the styles you want, and voila! A complete sweater pattern appears for you to knit as-is or use as a base for more complex projects.</p>
     </section>
-    <section id="enter-name">
-      <form id="nameSave" class="pure-form pure-form-aligned">
-        <label id="label-enter-name" for="knitter-name">Enter your name:<input name="username" id="knitter-name" type="text" size="15" placeholder="Knitty McYarn" value="Name"></label>
+    <section id="enter-name"><!-- #enter-name CALLED IN KNITTER -->
+      <form id="nameSave" class="pure-form pure-form-aligned"><!-- #nameSave CALLED IN APP AND KNITTER -->
+        <label for="knitter-name">Enter your name:<input name="username" id="knitter-name" type="text" size="15" placeholder="Knitty McYarn" value="Name"></label><!-- #knitter-name CALLED IN APP AND KNITTER -->
           <fieldset class="pure-control-group">
-            <p id="choose-size">Choose a Size:</p>
+            <p>Choose a Size:</p>
               <label for="XS">X-Small<input name="size" id="XS" type="radio"></label>
               <label for="S">Small<input name="size" id="S" type="radio"></label>
               <label for="M">Medium<input name="size" id="M" type="radio" checked></label>
               <label for="L">Large<input name="size" id="L" type="radio"></label>
               <label for="XL">X-Large<input name="size" id="XL" type="radio"></label>
               <label for="XXL">2X<input name="size" id="XXL" type="radio"></label>
+              <!-- ALL CALLED IN KNITTER -->
           </fieldset>
-        <button type="submit" id="submit">Submit Now</button>
-        <button id="start-design">Start Designing »</button>
+        <button type="submit" id="submit">Save</button><!-- NOT CALLED; styles button-->
+        <button id="start-design">Start Designing »</button><!-- #start-design CALLED IN KNITTER -->
       </form>
     </section>
   </main>
