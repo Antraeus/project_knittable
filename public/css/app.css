@@ -37,7 +37,7 @@ a:hover {
   color: #df4c25;
 }
 /*--NAVIGATION--------------------------------*/
-.nav {
+nav button {
   width: 25%;
   height: 50px;
   text-shadow: 0px 1.5px 1.5px rgba(0,0,0,0.3);
@@ -77,6 +77,21 @@ label.disabled {
 #save-new-design {
   position: relative;
   padding-bottom: 5em;
+}
+/*--CANVAS--------------------------------*/
+#render {
+  position: fixed;
+  top: 200px;
+  right: 20px;
+  width: 501px;
+  height: 361px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+#canvas1, #canvas2, #canvas3, #canvas4 {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 /*--BUTTONS--------------------------------*/
 button {
@@ -173,21 +188,3 @@ button:disabled {
   background-color: hsla(99, 83%, 56%, 0.9);
   text-shadow: 0px 1px 1px black;
 }
-/*--CANVAS--------------------------------*/
-#render {
-  position: fixed;
-  top: 200px;
-  right: 20px;
-  width: 501px;
-  height: 361px;
-  background-color: #fff;
-  border-radius: 10px;
-}
-#canvas1, #canvas2, #canvas3, #canvas4 {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-
-
